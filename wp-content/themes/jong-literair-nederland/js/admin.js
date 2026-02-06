@@ -1,0 +1,1 @@
+console.log("Hello from the Jong Literair Nederland admin script.");

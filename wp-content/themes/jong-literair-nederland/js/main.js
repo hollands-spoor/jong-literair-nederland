@@ -1,0 +1,1 @@
+(()=>{"use strict";console.info("Jong Literair Nederland child theme assets loaded.")})();
