@@ -1,0 +1,142 @@
+import { addFilter } from "@wordpress/hooks";
+import { InspectorControls } from "@wordpress/block-editor";
+import { PanelBody, SelectControl, RangeControl } from "@wordpress/components";
+import { registerBlockVariation } from "@wordpress/blocks";
+
+registerBlockVariation("core/query", {
+    name: "ln-query",
+    title: "LN Posts",
+    icon: (
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="120"
+            height="120"
+            viewBox="-10 -1 80 82"
+        >
+            <circle cx="30" cy="40" r="40" stroke-width="2px" stroke="#000000" fill="none" />
+            <path id="links-1" d="M -8.0206 4.5122 L 30 10 L 30 70 L -8.0206 75.4878 Z M 30 10 L 68.0206 4.5122 L 68.0206 75.4878 L 30 70 Z" fill="#000088" />
+            <path d="M 25.5416 46.8004 L 26.2021 46.9328 23.8583 55.4262 L -0.5656 57.527 L -0.5656 56.5672 L 0.7734 56.4584 Q 2.9919 56.278 3.9315 54.781 4.4609 53.9322 4.4609 50.9974 L 4.4609 28.8602 Q 4.4609 25.6471 3.7544 24.7836 2.762 23.5852 0.7734 23.4224 L -0.5656 23.3127 L -0.5656 22.3529 L 14.4646 23.6546 L 14.4646 24.5436 Q 11.9837 24.3161 10.9542 24.7455 9.9372 25.1815 9.5561 25.9411 9.1734 26.7037 9.1734 29.6924 L 9.1734 50.7367 Q 9.1734 52.7867 9.5561 53.5257 9.8421 54.0226 10.4352 54.225 11.0247 54.4262 14.0556 54.1986 L 16.2835 54.0314 Q 19.6895 53.7757 21.0301 53.1417 22.3513 52.5169 23.4274 51.1151 24.4907 49.7071 25.5416 46.8004 Z"
+                id="char-l" fill="#ffffff" transform="scale(1,1.4) translate(0,-12)" 
+            />
+            <path
+                d="M 31.7495 24.8485 L 39.2254 24.2011 L 58.6565 48.6517 L 58.6565 28.557 Q 58.6565 25.3449 57.9329 24.6037 56.9846 23.606 54.9646 23.7714 L 53.7967 23.867 L 53.7967 22.9391 L 66.1895 21.8659 L 66.1895 22.8522 L 64.8584 22.9612 Q 62.5155 23.153 61.5503 24.5874 60.9649 25.4632 60.9649 28.4261 L 60.9649 58.1331 L 60.0142 58.0487 L 38.9505 30.8566 L 38.9505 50.2186 Q 38.9505 53.1171 39.5225 53.8794 40.3336 54.9223 42.0432 55.0613 L 43.0976 55.147 L 43.0976 56.0245 L 33.223 55.1752 L 33.223 54.3442 L 34.1591 54.4203 Q 35.9184 54.5633 36.6566 53.4328 37.1107 52.7322 37.1107 50.1154 L 37.1107 28.47 Q 35.898 26.9744 35.2673 26.5204 34.6611 26.0681 33.481 25.7332 32.9066 25.5778 31.7495 25.6725 Z"
+                id="char-n" fill="#ffffff" transform="scale(1,1.4) translate(0,-12)" 
+            />
+
+        </svg>
+    ),
+    description: "Displays LN Posts without duplicates .",
+    category: "literair-nederland",
+    isActive: ["namespace"],
+    attributes: {
+        namespace: "ln-query",
+        align: ["wide", "full"],
+        query: {
+            postType: "post",
+            perPage: 2,
+            pages: 1,
+            order: "asc",
+            orderBy: "title",
+            offset: 0,
+            exclude: [],
+            inherit: false,
+        },
+    },
+    allowedControls: [
+        "inherit",
+        "postType",
+        "sticky",
+        "taxQuery",
+        "author",
+        "search",
+        "offset",
+    ],
+    innerBlocks: [
+        [
+            "core/post-template",
+            { layout: { type: "grid", columnCount: 3 } },
+            [
+                ["core/post-title", { level: 3, isLink: true }],
+                ["core/post-featured-image"],
+                ["core/post-excerpt"],
+            ],
+        ],
+    ],
+});
+
+export const withLNPostsControls = (BlockEdit) => (props) => {
+    const {
+        attributes: { query, namespace },
+        setAttributes,
+    } = props;
+
+    return (
+        <>
+            <BlockEdit {...props} />
+            {"ln-query" === namespace && (
+                <InspectorControls>
+                    <PanelBody title="LN Posts Settings">
+                        <SelectControl
+                            label="Layout Position"
+                            value={query.layoutPos}
+                            options={[
+                                { value: "", label: "Select Position..." },
+                                { value: "rij-0", label: "Rij 0" },
+                                { value: "rij-1", label: "Rij 1" },
+                                { value: "rij-2", label: "Rij 2" },
+                                { value: "rechter-kolom-boven", label: "Rechter Kolom Boven" },
+                                { value: "rechter-kolom-boven-sticky", label: "Rechter Kolom Boven Sticky" },
+                            ]}
+                            onChange={(value) => {
+                                setAttributes({
+                                    query: {
+                                        ...query,
+                                        layoutPos: value,
+                                    },
+                                });
+                            }}
+                        />
+                        <SelectControl
+                            label="Order By"
+                            value={query.orderBy}
+                            options={[
+                                { value: "", label: "Select Sort Order..." },
+                                { value: "title", label: "Title" },
+                                { value: "date", label: "Date" },
+                                { value: "rand", label: "Random" },
+                            ]}
+                            onChange={(value) => {
+                                setAttributes({
+                                    query: {
+                                        ...query,
+                                        orderBy: value,
+                                    },
+                                });
+                            }}
+                        />
+                        <RangeControl
+                            label="Number of Items"
+                            value={query.perPage}
+                            onChange={(value) => {
+                                setAttributes({
+                                    query: {
+                                        ...query,
+                                        perPage: value,
+                                    },
+                                });
+                            }}
+                            min={1}
+                            max={10}
+                        />
+                    </PanelBody>
+                </InspectorControls>
+            )}
+        </>
+    );
+};
+
+addFilter(
+    "editor.BlockEdit",
+    "literair-nederland-blocks/ln-query-controls",
+    withLNPostsControls
+);

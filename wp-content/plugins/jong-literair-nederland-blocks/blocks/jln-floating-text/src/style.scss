@@ -1,0 +1,21 @@
+/* Front-end + editor shared styles for the Floating Text block. */
+
+.wp-block-jln-jln-floating-text {
+    position: relative;
+    overflow: visible;
+}
+
+.jln-floating-text__svg {
+    position: absolute;
+    pointer-events: none;
+    overflow: visible;
+}
+
+.jln-floating-text__text {
+    font-family: inherit;
+    letter-spacing: 0.06em;
+}
+
+.jln-floating-text__content {
+    margin-top: 1.5rem;
+}

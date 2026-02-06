@@ -1,0 +1,238 @@
+{
+  "request": {
+    "result": "1",
+    "errorId": "",
+    "errorMessage": ""
+  },
+  "merchant": {
+    "id": "M-3421-2120",
+    "name": "Demotour Pay.nl",
+    "publicName": "Demotour Pay.nl",
+    "state": "1"
+  },
+  "service": {
+    "id": "SL-6712-4510",
+    "state": "1",
+    "name": "Andy",
+    "description": "Test voor andys webshops",
+    "publication": "http:\/\/andy.dev2.kopersteden.nl",
+    "basePath": "https:\/\/admin.pay.nl\/images",
+    "module": "2",
+    "subModule": "39",
+    "successUrl": "",
+    "errorUrl": ""
+  },
+  "settings": "",
+  "countryOptionList": {
+    "NL": {
+      "id": "NL",
+      "name": "Netherlands",
+      "visibleName": "Netherlands",
+      "in_eu": "1",
+      "img": "nl.gif",
+      "path": "\/flags\/",
+      "paymentOptionList": {
+        "10": {
+          "id": "10",
+          "name": "iDEAL",
+          "visibleName": "iDEAL",
+          "min_amount": "1",
+          "max_amount": "1000000",
+          "countries": ["NL"],
+          "banks": [{
+            "id": "1",
+            "name": "ABN Amro",
+            "visibleName": "ABN Amro",
+            "image": "\/payment_banks\/1.png"
+          }, {
+            "id": "8",
+            "name": "ASN Bank",
+            "visibleName": "ASN Bank",
+            "image": "\/payment_banks\/8.png"
+          }, {
+            "id": "5080",
+            "name": "Bunq",
+            "visibleName": "Bunq",
+            "image": "\/payment_banks\/5080.png"
+          }, {
+            "id": "4",
+            "name": "ING",
+            "visibleName": "ING",
+            "image": "\/payment_banks\/4.png"
+          }, {
+            "id": "12",
+            "name": "Knab",
+            "visibleName": "Knab",
+            "image": "\/payment_banks\/12.png"
+          }, {
+            "id": "2",
+            "name": "Rabobank",
+            "visibleName": "Rabobank",
+            "image": "\/payment_banks\/2.png"
+          }, {
+            "id": "9",
+            "name": "RegioBank",
+            "visibleName": "RegioBank",
+            "image": "\/payment_banks\/9.png"
+          }, {
+            "id": "5084",
+            "name": "Revolut",
+            "visibleName": "Revolut",
+            "image": "\/payment_banks\/5084.png"
+          }, {
+            "id": "5",
+            "name": "SNS",
+            "visibleName": "SNS",
+            "image": "\/payment_banks\/5.png"
+          }, {
+            "id": "5082",
+            "name": "Svenska Handelsbanken",
+            "visibleName": "Svenska Handelsbanken",
+            "image": "\/payment_banks\/5082.png"
+          }, {
+            "id": "10",
+            "name": "Triodos Bank",
+            "visibleName": "Triodos Bank",
+            "image": "\/payment_banks\/10.png"
+          }, {
+            "id": "11",
+            "name": "Van Lanschot",
+            "visibleName": "Van Lanschot",
+            "image": "\/payment_banks\/11.png"
+          }],
+          "brand": {
+            "id": "1",
+            "name": "iDEAL",
+            "image": "\/payment_profile_brands\/100x100\/1.png",
+            "public_description": "Met iDEAL kunt u met een Nederlandse bankrekening vertrouwd, veilig en gemakkelijk betalen via internetbankieren van uw eigen bank."
+          }
+        },
+        "739": {
+          "id": "739",
+          "name": "AfterPay",
+          "visibleName": "AfterPay",
+          "min_amount": "500",
+          "max_amount": "1000000",
+          "countries": ["NL"],
+          "banks": [],
+          "brand": {
+            "id": "14",
+            "name": "AfterPay",
+            "image": "\/payment_profile_brands\/100x100\/14.png",
+            "public_description": "AfterPay"
+          }
+        },
+        "740": {
+          "id": "740",
+          "name": "Afterpay EM",
+          "visibleName": "Afterpay EM",
+          "min_amount": "1",
+          "max_amount": "1000000",
+          "countries": ["NL"],
+          "banks": [],
+          "brand": {
+            "id": "14",
+            "name": "AfterPay",
+            "image": "\/payment_profile_brands\/100x100\/14.png",
+            "public_description": "AfterPay"
+          }
+        },
+        "1672": {
+          "id": "1672",
+          "name": "Billink",
+          "visibleName": "Achteraf betalen via Billink",
+          "min_amount": "1",
+          "max_amount": "250000",
+          "countries": ["NL"],
+          "banks": [],
+          "brand": {
+            "id": "16",
+            "name": "Billink",
+            "image": "\/payment_profile_brands\/100x100\/16.png",
+            "public_description": "Bij achteraf betalen met Billink dient u de factuur binnen 14 dagen te voldoen. Deze factuur kan eenvoudig via een overschrijving of via iDEAL vanuit de mail worden betaald."
+          }
+        },
+        "1714": {
+          "id": "1714",
+          "name": "VVV Cadeaukaart",
+          "visibleName": "VVV Cadeaukaart",
+          "min_amount": "1",
+          "max_amount": "1000000",
+          "countries": ["NL"],
+          "banks": [],
+          "brand": {
+            "id": "25",
+            "name": "VVV cadeaukaart",
+            "image": "\/payment_profile_brands\/100x100\/25.png",
+            "public_description": ""
+          }
+        }
+      }
+    },
+    "ALL": {
+      "id": "ALL",
+      "name": "All countries",
+      "visibleName": "All countries",
+      "in_eu": "0",
+      "img": "all.gif",
+      "path": "\/flags\/",
+      "paymentOptionList": {
+        "136": {
+          "id": "136",
+          "name": "Overboeking (SCT)",
+          "visibleName": "Overboeking (SCT)",
+          "min_amount": "1",
+          "max_amount": "5000000",
+          "countries": ["ALL"],
+          "banks": [],
+          "brand": {
+            "id": "12",
+            "name": "Overboeking (SCT)",
+            "image": "\/payment_profile_brands\/100x100\/12.png",
+            "public_description": "Boek uw betaling over naar ons IBAN rekeningnummer, betalingen worden binnen 2 werkdagen verwerkt."
+          }
+        },
+        "559": {
+          "id": "559",
+          "name": "SOFORT e-commerce",
+          "visibleName": "SOFORT",
+          "min_amount": "50",
+          "max_amount": "500000",
+          "countries": ["ALL"],
+          "banks": [],
+          "brand": {
+            "id": "4",
+            "name": "Sofortbanking",
+            "image": "\/payment_profile_brands\/100x100\/4.png",
+            "public_description": "Sofortbanking"
+          }
+        }
+      }
+    },
+    "BE": {
+      "id": "BE",
+      "name": "Belgium",
+      "visibleName": "Belgium",
+      "in_eu": "1",
+      "img": "be.gif",
+      "path": "\/flags\/",
+      "paymentOptionList": {
+        "436": {
+          "id": "436",
+          "name": "Bancontact",
+          "visibleName": "Bancontact",
+          "min_amount": "1",
+          "max_amount": "1000000",
+          "countries": ["BE"],
+          "banks": [],
+          "brand": {
+            "id": "2",
+            "name": "Bancontact",
+            "image": "\/payment_profile_brands\/100x100\/2.png",
+            "public_description": "U kunt met Bancontact vertrouwd, veilig en gemakkelijk betalen via internetbankieren van uw eigen bank, wanneer u een Belgische bankrekening heeft."
+          }
+        }
+      }
+    }
+  }
+}

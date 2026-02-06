@@ -1,0 +1,33 @@
+# Ignore everything
+*
+
+
+# Keep wp-content directory
+!wp-content/
+wp-content/*
+
+# Keep plugins and themes containers
+!wp-content/plugins/
+!wp-content/themes/
+
+# Ignore all plugins except the allowed ones
+wp-content/plugins/*
+!wp-content/plugins/doneren-met-ING/
+!wp-content/plugins/doneren-met-ING/**
+!wp-content/plugins/jong-literair-nederland-blocks/
+!wp-content/plugins/jong-literair-nederland-blocks/**
+!wp-content/plugins/x-literair-nederland-blocks/
+!wp-content/plugins/x-literair-nederland-blocks/**
+
+# Ignore all themes except ours
+wp-content/themes/*
+!wp-content/themes/jong-literair-nederland/
+!wp-content/themes/jong-literair-nederland/**
+
+wp-content/uploads/*
+
+#Ignore all node_modules/
+**/node_modules/
+
+# Keep this file
+!.gitignore

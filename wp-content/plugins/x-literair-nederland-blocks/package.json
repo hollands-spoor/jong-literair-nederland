@@ -1,0 +1,31 @@
+{
+	"name": "x-ln-blocks",
+	"version": "0.1.0",
+	"description": "Portable blocks library for Literair Nederland",
+	"author": "Hollands Spoor",
+	"license": "GPL-2.0-or-later",
+	"main": "build/index.js",
+	"scripts": {
+		"build": "run-s build:ln-donation build:ln-bibliographics build:ln-query",
+		"build:ln-donation": "wp-scripts build --source-path=blocks/ln-donation/src --output-path=blocks/ln-donation/build --blocks-manifest",
+		"build:ln-bibliographics": "wp-scripts build --source-path=blocks/ln-bibliographics/src --output-path=blocks/ln-bibliographics/build --blocks-manifest",
+		"build:ln-query": "wp-scripts build --source-path=blocks/ln-query/src --output-path=blocks/ln-query/build --blocks-manifest",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"packages-update": "wp-scripts packages-update",
+		"plugin-zip": "wp-scripts plugin-zip",
+		"start": "run-p start:ln-donation start:ln-bibliographics start:ln-query",
+		"start:ln-donation": "wp-scripts start --source-path=blocks/ln-donation/src --output-path=blocks/ln-donation/build --blocks-manifest",
+		"start:ln-bibliographics": "wp-scripts start --source-path=blocks/ln-bibliographics/src --output-path=blocks/ln-bibliographics/build --blocks-manifest",
+		"start:ln-query": "wp-scripts start --source-path=blocks/ln-query/src --output-path=blocks/ln-query/build --blocks-manifest"
+	},
+	"dependencies": {
+		"@wordpress/block-editor": "latest",
+		"@wordpress/blocks": "latest",
+		"@wordpress/i18n": "latest"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^31.3.0",
+		"npm-run-all": "^4.1.5"
+	}
+}

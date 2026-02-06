@@ -1,0 +1,61 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "jln/jln-floating-text",
+	"version": "0.1.0",
+	"title": "JLN Floating Text",
+	"category": "literair-nederland",
+	"icon": "smiley",
+	"description": "Floating headline/text block for Jong Literair Nederland.",
+	"keywords": [
+		"curve",
+		"text",
+		"jong"
+	],
+	"attributes": {
+		"text": {
+			"type": "string",
+			"default": "Floating text"
+		},
+		"fontFamily": {
+			"type": "string",
+			"default": ""
+		},
+		"textType": {
+			"type": "string",
+			"default": "curved"
+		},
+		"centerX": {
+			"type": "number",
+			"default": 200
+		},
+		"centerY": {
+			"type": "number",
+			"default": 200
+		},
+		"radius": {
+			"type": "number",
+			"default": 160
+		},
+		"angle": {
+			"type": "number",
+			"default": 0
+		},
+		"fontSize": {
+			"type": "number",
+			"default": 28
+		},
+		"pathId": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "jong-literair-nederland-blocks",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js"
+}

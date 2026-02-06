@@ -1,0 +1,45 @@
+/*!*****************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./blocks/jln-floating-text/src/editor.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************/
+/* Editor-only styles for the Floating Text block. */
+.wp-block-jln-jln-floating-text {
+  position: relative;
+  overflow: visible;
+  padding-bottom: 1rem;
+}
+.jln-floating-text__controls {
+  max-width: 480px;
+  margin-bottom: 1rem;
+}
+.jln-floating-text__content {
+  margin-top: 1.5rem;
+}
+.jln-floating-text__guide {
+  position: absolute;
+  z-index: 10;
+}
+.jln-floating-text__guide-circle {
+  pointer-events: auto;
+  cursor: grab;
+}
+.jln-floating-text__guide-circle--dragging {
+  cursor: grabbing;
+}
+.jln-floating-text__guide-circle circle {
+  fill: rgba(255, 255, 255, 0.6);
+  stroke: #111;
+  stroke-width: 1;
+}
+.jln-floating-text__guide-circle--dragging circle {
+  stroke-width: 2;
+}
+.jln-floating-text__guide-line {
+  pointer-events: none;
+}
+.jln-floating-text__guide-line line {
+  stroke: #111;
+  stroke-dasharray: 4;
+  stroke-width: 1;
+}
+
+/*# sourceMappingURL=index.css.map*/
