@@ -35,8 +35,8 @@ registerBlockVariation("core/query", {
             postType: "post",
             perPage: 2,
             pages: 1,
-            order: "asc",
-            orderBy: "title",
+            order: "desc",
+            orderBy: "date",
             offset: 0,
             exclude: [],
             inherit: false,
@@ -98,20 +98,31 @@ export const withLNPostsControls = (BlockEdit) => (props) => {
                         />
                         <SelectControl
                             label="Order By"
-                            value={query.orderBy}
+                            value={
+                                query.orderBy === "date"
+                                    ? query.order === "asc"
+                                        ? "date-asc"
+                                        : "date-desc"
+                                    : query.orderBy
+                            }
                             options={[
-                                { value: "", label: "Select Sort Order..." },
+                                { value: "date-asc", label: "Date ASC" },
+                                { value: "date-desc", label: "Date DESC" },
                                 { value: "title", label: "Title" },
-                                { value: "date", label: "Date" },
                                 { value: "rand", label: "Random" },
                             ]}
                             onChange={(value) => {
-                                setAttributes({
-                                    query: {
-                                        ...query,
-                                        orderBy: value,
-                                    },
-                                });
+                                const nextQuery = { ...query };
+
+                                if (value === "date-asc" || value === "date-desc") {
+                                    nextQuery.orderBy = "date";
+                                    nextQuery.order = value === "date-asc" ? "asc" : "desc";
+                                } else {
+                                    nextQuery.orderBy = value;
+                                    nextQuery.order = query.order || "asc";
+                                }
+
+                                setAttributes({ query: nextQuery });
                             }}
                         />
                         <RangeControl
