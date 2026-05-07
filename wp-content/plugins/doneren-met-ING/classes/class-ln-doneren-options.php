@@ -77,6 +77,22 @@ if (!class_exists('LN_Doneren_Options')) {
                 array($this, 'sanitize')
             );
 
+            // Appearance section (shown first)
+            add_settings_section(
+                'appearance_section_id',
+                'Appearance',
+                null,
+                'ln-doneren-settings-admin'
+            );
+
+            add_settings_field(
+                'stamp',
+                'Stamp',
+                array($this, 'stamp_callback'),
+                'ln-doneren-settings-admin',
+                'appearance_section_id'
+            );
+
             add_settings_section(
                 'pages_section_id',
                 'Pagina Instellingen',
@@ -218,6 +234,9 @@ if (!class_exists('LN_Doneren_Options')) {
 
         public function sanitize($input) {
             $sanitized = array();
+            if (isset($input['stamp'])) {
+                $sanitized['stamp'] = $input['stamp'] === '1' ? '1' : '0';
+            }
             if (isset($input['paypal_email'])) {
                 $sanitized['paypal_email'] = sanitize_email($input['paypal_email']);
             }
@@ -306,6 +325,17 @@ if (!class_exists('LN_Doneren_Options')) {
             <input type="email"
                    name="ln_doneren_options[paypal_email]"
                    value="<?php echo isset($options['paypal_email']) ? esc_attr($options['paypal_email']) : ''; ?>" />
+            <?php
+        }
+
+        public function stamp_callback() {
+            $options = get_option('ln_doneren_options');
+            $current = isset($options['stamp']) ? (string) $options['stamp'] : '0';
+            ?>
+            <select name="ln_doneren_options[stamp]">
+                <option value="0" <?php selected($current, '0'); ?>>literair nederland</option>
+                <option value="1" <?php selected($current, '1'); ?>>jong literairnederland</option>
+            </select>
             <?php
         }
 
@@ -522,6 +552,7 @@ if (!class_exists('LN_Doneren_Options')) {
         }
 
         private function fetch_payment_methods_from_api(array $overrides = []): array {
+            $methods = [];
             $options = get_option('ln_doneren_options', []);
             $merged_overrides = array_filter(
                 $overrides,

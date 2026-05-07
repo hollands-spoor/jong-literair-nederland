@@ -71,6 +71,7 @@ function ln_doneren_shortcode_handler( $atts ) {
             ob_end_clean();
         }
         header('Content-Type: text/plain; charset=utf-8', true, 200);
+        // TODO: you can glue some text-data from $exchange_result just after 'TRUE |' for internal Pay.nl messaging
         echo 'TRUE';
         exit;
     }
@@ -89,7 +90,9 @@ function ln_doneren_shortcode_handler( $atts ) {
         $payment_session_id = sanitize_text_field( $_GET['paymentSessionId'] ?? '' );
         // TODO: check also $payment_session_id 
         // TODO: check if orderId is in our database
-        error_log( 'Processing return_url callback for orderId: ' . $order_id . ' status: ' . $order_status_id );
+        if ( isset( $donatie ) && is_object( $donatie ) && method_exists( $donatie, 'log' ) ) {
+            $donatie->log( 'Processing return_url callback for orderId: ' . $order_id . ' status: ' . $order_status_id );
+        }
         $donatie->redirect_after_payment( $order_id, $order_status_id, $payment_session_id );
         // die here?
 
@@ -100,7 +103,7 @@ function ln_doneren_shortcode_handler( $atts ) {
 
     // 4. als formulier is ingevuld, verwerk de donatie
     //   $donatie->process_form($atts);
-    if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset( $_POST['ln_donate_nonce'] ) && isset( $_POST['hs_did'])) {
+    if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset( $_POST['ln_donate_nonce'] ) ) {
         // hier iets retourneren? of alleen maar doen?
         return $donatie->process_form($atts);
     }
@@ -183,6 +186,7 @@ function ln_doneren_admin_enqueue_assets( $hook_suffix ) {
 }
 
 add_action( 'wp_ajax_ln_delete_donation', 'ln_doneren_handle_delete_donation' );
+
 function ln_doneren_handle_delete_donation() {
     if ( ! current_user_can( 'manage_options' ) ) {
         wp_send_json_error( __( 'Geen toestemming om te verwijderen.', 'doneren-met-ing' ), 403 );
