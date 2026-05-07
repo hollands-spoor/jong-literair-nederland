@@ -6,7 +6,7 @@ return array(
 		'apiVersion' => 3,
 		'name' => 'ln/ln-bibliographics',
 		'version' => '0.1.0',
-		'title' => 'Bibliografisch',
+		'title' => 'Bibliographic',
 		'category' => 'literair-nederland',
 		'icon' => 'smiley',
 		'description' => 'Block with title info.',
@@ -17,6 +17,12 @@ return array(
 			'html' => false
 		),
 		'attributes' => array(
+			'bibliographic' => array(
+				'type' => 'object',
+				'default' => array(
+					
+				)
+			),
 			'boektitel' => array(
 				'type' => 'string',
 				'default' => ''
@@ -24,11 +30,20 @@ return array(
 			'isbn' => array(
 				'type' => 'string',
 				'default' => ''
+			),
+			'showBuyButton' => array(
+				'type' => 'boolean',
+				'default' => true
+			),
+			'isSticky' => array(
+				'type' => 'boolean',
+				'default' => true
 			)
 		),
-		'textdomain' => 'ln-bibliographics',
+		'textdomain' => 'x-literair-nederland-blocks',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
+		'render' => 'file:./render.php',
 		'style' => 'file:./style-index.css'
 	)
 );

@@ -1,0 +1,21 @@
+:where(.wp-social-link-jong-literair-nederland) {
+	color: #13ccb0;
+}
+
+:where(.wp-social-link-jong-literair-nederland .wp-block-social-link-anchor svg),
+:where(.wp-social-link-jong-literair-nederland .wp-block-social-link-anchor svg *) {
+	fill: currentColor;
+}
+
+.wp-block-social-links .wp-social-link-jong-literair-nederland svg {
+    width: 2em;
+    height: 2em;
+}
+/* Optional: Change color on hover */
+.wp-block-social-links .wp-block-social-link.wp-social-link:not(:hover) .wp-block-social-link-anchor svg {
+    color: #fff;
+}
+
+.wp-block-social-link:hover {
+    transform: scale(1.2);
+}

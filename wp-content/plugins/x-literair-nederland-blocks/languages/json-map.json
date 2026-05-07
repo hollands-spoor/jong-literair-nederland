@@ -1,0 +1,19 @@
+{
+  "blocks/ln-ad/src/block.js": "blocks/ln-ad/build/index.js",
+  "blocks/ln-ad/src/edit.js": "blocks/ln-ad/build/index.js",
+  "blocks/ln-anniversary/src/block.js": "blocks/ln-anniversary/build/index.js",
+  "blocks/ln-anniversary/src/edit.js": "blocks/ln-anniversary/build/index.js",
+  "blocks/ln-bibliographics/src/auto-insert-bibliographics.js": "blocks/ln-bibliographics/build/index.js",
+  "blocks/ln-bibliographics/src/block.js": "blocks/ln-bibliographics/build/index.js",
+  "blocks/ln-bibliographics/src/edit.js": "blocks/ln-bibliographics/build/index.js",
+  "blocks/ln-boek/src/block.js": "blocks/ln-boek/build/index.js",
+  "blocks/ln-boek/src/edit.js": "blocks/ln-boek/build/index.js",
+  "blocks/ln-donation/src/block.js": "blocks/ln-donation/build/index.js",
+  "blocks/ln-donation/src/edit.js": "blocks/ln-donation/build/index.js",
+  "blocks/ln-oogst/src/block.js": "blocks/ln-oogst/build/index.js",
+  "blocks/ln-oogst/src/edit.js": "blocks/ln-oogst/build/index.js",
+  "blocks/ln-query/src/index.js": "blocks/ln-query/build/index.js",
+  "blocks/ln-year-archive/src/block.js": "blocks/ln-year-archive/build/index.js",
+  "blocks/ln-year-archive/src/edit.js": "blocks/ln-year-archive/build/index.js",
+  "blocks/ln-year-archive/src/view.js": "blocks/ln-year-archive/build/view.js"
+}

@@ -3,7 +3,7 @@
   "apiVersion": 3,
   "name": "ln/ln-bibliographics",
   "version": "0.1.0",
-  "title": "Bibliografisch",
+  "title": "Bibliographic",
   "category": "literair-nederland",
   "icon": "smiley",
   "description": "Block with title info.",
@@ -12,6 +12,10 @@
     "html": false
   },
   "attributes": {
+    "bibliographic": {
+      "type": "object",
+      "default": {}
+    },
     "boektitel": {
       "type": "string",
       "default": ""
@@ -19,10 +23,19 @@
     "isbn": {
       "type": "string",
       "default": ""
+    },
+    "showBuyButton": {
+      "type": "boolean",
+      "default": true
+    },
+    "isSticky": {
+      "type": "boolean",
+      "default": true
     }
   },
-  "textdomain": "ln-bibliographics",
+  "textdomain": "x-literair-nederland-blocks",
   "editorScript": "file:./index.js",
   "editorStyle": "file:./index.css",
+  "render": "file:./render.php",
   "style": "file:./style-index.css"
 }

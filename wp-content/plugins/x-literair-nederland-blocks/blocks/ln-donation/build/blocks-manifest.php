@@ -16,7 +16,7 @@ return array(
 		'supports' => array(
 			'html' => false
 		),
-		'textdomain' => 'ln-donation',
+		'textdomain' => 'x-literair-nederland-blocks',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css',

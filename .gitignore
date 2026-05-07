@@ -16,6 +16,7 @@ wp-content/plugins/*
 !wp-content/plugins/doneren-met-ING/**
 !wp-content/plugins/jong-literair-nederland-blocks/
 !wp-content/plugins/jong-literair-nederland-blocks/**
+!wp-content/plugins/x-literair-nederland-blocks
 !wp-content/plugins/x-literair-nederland-blocks/
 !wp-content/plugins/x-literair-nederland-blocks/**
 

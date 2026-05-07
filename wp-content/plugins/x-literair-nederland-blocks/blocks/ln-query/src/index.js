@@ -1,7 +1,8 @@
 import { addFilter } from "@wordpress/hooks";
 import { InspectorControls } from "@wordpress/block-editor";
-import { PanelBody, SelectControl, RangeControl } from "@wordpress/components";
+import { PanelBody, SelectControl } from "@wordpress/components";
 import { registerBlockVariation } from "@wordpress/blocks";
+import { __ } from "@wordpress/i18n";
 
 registerBlockVariation("core/query", {
     name: "ln-query",
@@ -13,8 +14,8 @@ registerBlockVariation("core/query", {
             height="120"
             viewBox="-10 -1 80 82"
         >
-            <circle cx="30" cy="40" r="40" stroke-width="2px" stroke="#000000" fill="none" />
-            <path id="links-1" d="M -8.0206 4.5122 L 30 10 L 30 70 L -8.0206 75.4878 Z M 30 10 L 68.0206 4.5122 L 68.0206 75.4878 L 30 70 Z" fill="#000088" />
+            <circle cx="30" cy="40" r="40" strokeWidth="2px" stroke="#000000" fill="none" />
+            <path id="pages" d="M -8.0206 4.5122 L 30 10 L 68.0206 4.5122 L 68.0206 75.4878 L 30 70 L -8.0206 75.4878 Z" fill="#000088" />
             <path d="M 25.5416 46.8004 L 26.2021 46.9328 23.8583 55.4262 L -0.5656 57.527 L -0.5656 56.5672 L 0.7734 56.4584 Q 2.9919 56.278 3.9315 54.781 4.4609 53.9322 4.4609 50.9974 L 4.4609 28.8602 Q 4.4609 25.6471 3.7544 24.7836 2.762 23.5852 0.7734 23.4224 L -0.5656 23.3127 L -0.5656 22.3529 L 14.4646 23.6546 L 14.4646 24.5436 Q 11.9837 24.3161 10.9542 24.7455 9.9372 25.1815 9.5561 25.9411 9.1734 26.7037 9.1734 29.6924 L 9.1734 50.7367 Q 9.1734 52.7867 9.5561 53.5257 9.8421 54.0226 10.4352 54.225 11.0247 54.4262 14.0556 54.1986 L 16.2835 54.0314 Q 19.6895 53.7757 21.0301 53.1417 22.3513 52.5169 23.4274 51.1151 24.4907 49.7071 25.5416 46.8004 Z"
                 id="char-l" fill="#ffffff" transform="scale(1,1.4) translate(0,-12)" 
             />
@@ -37,6 +38,7 @@ registerBlockVariation("core/query", {
             pages: 1,
             order: "desc",
             orderBy: "date",
+            queryType: "",
             offset: 0,
             exclude: [],
             inherit: false,
@@ -50,6 +52,7 @@ registerBlockVariation("core/query", {
         "author",
         "search",
         "offset",
+        "perPage"
     ],
     innerBlocks: [
         [
@@ -77,15 +80,13 @@ export const withLNPostsControls = (BlockEdit) => (props) => {
                 <InspectorControls>
                     <PanelBody title="LN Posts Settings">
                         <SelectControl
-                            label="Layout Position"
+                            label={__("Layout Position", "x-literair-nederland-blocks")}
                             value={query.layoutPos}
                             options={[
-                                { value: "", label: "Select Position..." },
-                                { value: "rij-0", label: "Rij 0" },
-                                { value: "rij-1", label: "Rij 1" },
-                                { value: "rij-2", label: "Rij 2" },
-                                { value: "rechter-kolom-boven", label: "Rechter Kolom Boven" },
-                                { value: "rechter-kolom-boven-sticky", label: "Rechter Kolom Boven Sticky" },
+                                { value: "", label: __("Select Position...", "x-literair-nederland-blocks") },
+                                { value: "breaking", label: __("Breaking News", "x-literair-nederland-blocks") },
+                                { value: "rij-0", label: __("Row 0", "x-literair-nederland-blocks") },
+                                { value: "rij-1", label: __("Row 1", "x-literair-nederland-blocks") },
                             ]}
                             onChange={(value) => {
                                 setAttributes({
@@ -97,7 +98,24 @@ export const withLNPostsControls = (BlockEdit) => (props) => {
                             }}
                         />
                         <SelectControl
-                            label="Order By"
+                            label={__("Query Type", "x-literair-nederland-blocks")}
+                            value={query.queryType || ""}
+                            options={[
+                                { value: "", label: __("Regular", "x-literair-nederland-blocks"), },
+                                { value: "verwant", label: __("Related", "x-literair-nederland-blocks"), },
+                                { value: "recensent", label: __("By Reviewer", "x-literair-nederland-blocks"), },
+                            ]}
+                            onChange={(value) => {
+                                setAttributes({
+                                    query: {
+                                        ...query,
+                                        queryType: value,
+                                    },
+                                });
+                            }}
+                        />
+                        <SelectControl
+                            label={__("Order By", "x-literair-nederland-blocks")}
                             value={
                                 query.orderBy === "date"
                                     ? query.order === "asc"
@@ -106,10 +124,10 @@ export const withLNPostsControls = (BlockEdit) => (props) => {
                                     : query.orderBy
                             }
                             options={[
-                                { value: "date-asc", label: "Date ASC" },
-                                { value: "date-desc", label: "Date DESC" },
-                                { value: "title", label: "Title" },
-                                { value: "rand", label: "Random" },
+                                { value: "date-asc", label: __("Date ASC", "x-literair-nederland-blocks") },
+                                { value: "date-desc", label: __("Date DESC", "x-literair-nederland-blocks") },
+                                { value: "title", label: __("Title", "x-literair-nederland-blocks") },
+                                { value: "rand", label: __("Random", "x-literair-nederland-blocks") },
                             ]}
                             onChange={(value) => {
                                 const nextQuery = { ...query };
@@ -125,20 +143,7 @@ export const withLNPostsControls = (BlockEdit) => (props) => {
                                 setAttributes({ query: nextQuery });
                             }}
                         />
-                        <RangeControl
-                            label="Number of Items"
-                            value={query.perPage}
-                            onChange={(value) => {
-                                setAttributes({
-                                    query: {
-                                        ...query,
-                                        perPage: value,
-                                    },
-                                });
-                            }}
-                            min={1}
-                            max={10}
-                        />
+                        
                     </PanelBody>
                 </InspectorControls>
             )}

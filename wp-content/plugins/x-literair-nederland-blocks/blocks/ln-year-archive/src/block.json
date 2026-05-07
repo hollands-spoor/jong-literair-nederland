@@ -1,0 +1,81 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "ln/ln-year-archive",
+	"version": "0.1.0",
+	"title": "LN Year Archive",
+	"category": "literair-nederland",
+	"icon": "calendar",
+	"description": "Shows a year-based archive with image mode and text mode.",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"categories": {
+			"type": "array",
+			"items": {
+				"type": "string"
+			},
+			"default": [ "recensies", "interviews", "oogst" ]
+		},
+		"defaultMode": {
+			"type": "string",
+			"default": "image"
+		},
+		"defaultYear": {
+			"type": "number",
+			"default": 0
+		},
+		"imageColumnsDesktop": {
+			"type": "number",
+			"default": 8
+		},
+		"imageColumnsTablet": {
+			"type": "number",
+			"default": 4
+		},
+		"imageColumnsMobile": {
+			"type": "number",
+			"default": 2
+		},
+		"postsPerPageTextMode": {
+			"type": "number",
+			"default": 0
+		},
+		"showFieldBookAuthor": {
+			"type": "boolean",
+			"default": true
+		},
+		"showFieldBookTitle": {
+			"type": "boolean",
+			"default": true
+		},
+		"showFieldReviewer": {
+			"type": "boolean",
+			"default": true
+		},
+		"showFieldDate": {
+			"type": "boolean",
+			"default": true
+		},
+		"enableCoverFallback": {
+			"type": "boolean",
+			"default": true
+		},
+		"queryVarYear": {
+			"type": "string",
+			"default": "ln_year"
+		},
+		"queryVarMode": {
+			"type": "string",
+			"default": "ln_mode"
+		}
+	},
+	"textdomain": "x-literair-nederland-blocks",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"viewScript": "file:./view.js"
+}

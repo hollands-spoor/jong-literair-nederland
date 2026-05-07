@@ -11,5 +11,5 @@
  */
 ?>
 <p <?php echo get_block_wrapper_attributes(); ?>>
-	<?php esc_html_e( 'LN Donation – hello from a dynamic block!', 'ln-donation' ); ?>
+	<?php esc_html_e( 'LN Donation – hello from a dynamic block!', 'x-literair-nederland-blocks' ); ?>
 </p>

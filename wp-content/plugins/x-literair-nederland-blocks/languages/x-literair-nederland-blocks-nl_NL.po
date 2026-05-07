@@ -1,0 +1,1099 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: X LN Blocks 0.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/x-literair-"
+"nederland-blocks\n"
+"POT-Creation-Date: 2026-04-20T16:03:25+02:00\n"
+"PO-Revision-Date: 2026-04-20 16:20+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: nl_NL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Domain: x-literair-nederland-blocks\n"
+"X-Generator: Poedit 3.9\n"
+
+#. Plugin Name of the plugin
+#: x-literair-nederland-blocks.php
+msgid "X LN Blocks"
+msgstr "X LN Blocks"
+
+#. Description of the plugin
+#: x-literair-nederland-blocks.php
+msgid ""
+"Portable collection of LN blocks (or variations). These are used in Literair "
+"Nederland and in Jong Literair Nederland."
+msgstr ""
+"Draagbare verzameling LN-blokken (of variaties). Deze worden gebruikt in "
+"Literair Nederland en in Jong Literair Nederland."
+
+#. Author of the plugin
+#: x-literair-nederland-blocks.php
+msgid "Hollands Spoor"
+msgstr "Hollands Spoor"
+
+#: blocks/ln-ad/ln-ad.php:29
+msgid "Header"
+msgstr "Kop"
+
+#: blocks/ln-ad/ln-ad.php:30
+msgid ""
+"Top of the page, next to the website title. This position is very prominent "
+"and is shown on all pages."
+msgstr ""
+"Bovenaan de pagina, Naast the titel van de website. Deze positie is zeer "
+"prominent en wordt op alle pagina's getoond."
+
+#: blocks/ln-ad/ln-ad.php:35
+msgid "Sidebar (top)"
+msgstr "Sidebar (boven)"
+
+#: blocks/ln-ad/ln-ad.php:36
+msgid ""
+"Top of the sidebar. This position is clearly visible but less prominent than "
+"the header, and is shown on the front page."
+msgstr ""
+"Sidebar, top. Deze positie is goed zichtbaar maar minder prominent dan de "
+"header, en wordt de voorpagina getoond."
+
+#: blocks/ln-ad/ln-ad.php:41
+msgid "Content (top)"
+msgstr "Content (boven)"
+
+#: blocks/ln-ad/ln-ad.php:42
+msgid ""
+"Top of the front page content area. This position is clearly visible and is "
+"only shown on the front page."
+msgstr ""
+"Bovenin de content area van de voorpagina. Deze positie is goed zichtbaar en "
+"wordt alleen op de voorpagina getoond."
+
+#: blocks/ln-ad/ln-ad.php:47
+msgid "Content (middle)"
+msgstr "Content (midden)"
+
+#: blocks/ln-ad/ln-ad.php:48
+msgid ""
+"Middle of the front page content area. This position is only shown on the "
+"front page."
+msgstr ""
+"In het midden van content area van de voorpagina. Deze positie wordt alleen "
+"op de voorpagina getoond."
+
+#: blocks/ln-ad/ln-ad.php:95 includes/xln-options.php:119
+msgid "Ads"
+msgstr "Advertenties"
+
+#: blocks/ln-ad/ln-ad.php:96 blocks/ln-ad/build/index.js:67
+#: blocks/ln-ad/src/edit.js:30 blocks/ln-ad/build/index.js:30
+msgid "Ad"
+msgstr "Advertentie"
+
+#: blocks/ln-ad/ln-ad.php:97 blocks/ln-ad/ln-ad.php:98
+msgid "Add New Ad"
+msgstr "Nieuwe advertentie toevoegen"
+
+#: blocks/ln-ad/ln-ad.php:99
+msgid "Edit Ad"
+msgstr "Advertentie bewerken"
+
+#: blocks/ln-ad/ln-ad.php:100
+msgid "New Ad"
+msgstr "Nieuwe advertentie"
+
+#: blocks/ln-ad/ln-ad.php:101
+msgid "View Ad"
+msgstr "Advertentie bekijken"
+
+#: blocks/ln-ad/ln-ad.php:102
+msgid "Search Ads"
+msgstr "Advertenties zoeken"
+
+#: blocks/ln-ad/ln-ad.php:103
+msgid "No ads found"
+msgstr "Geen advertenties gevonden"
+
+#: blocks/ln-ad/ln-ad.php:104
+msgid "No ads found in Trash"
+msgstr "Geen advertenties in prullenbak"
+
+#: blocks/ln-ad/ln-ad.php:349
+msgid "Period"
+msgstr "Periode"
+
+#: blocks/ln-ad/ln-ad.php:350
+msgid "Views (unique)"
+msgstr "Weergaven (uniek)"
+
+#: blocks/ln-ad/ln-ad.php:351
+msgid "Clicks"
+msgstr "Klikken"
+
+#. translators: %d: Number of years ago.
+#: blocks/ln-anniversary/build/render.php:161
+#: blocks/ln-anniversary/src/render.php:161
+#, php-format
+msgid "Literair Nederland %d years ago"
+msgstr "Literair Nederland %d jaar geleden"
+
+#: blocks/ln-bibliographics/build/render.php:71
+#: blocks/ln-bibliographics/src/render.php:71
+msgid "Buy now"
+msgstr "Nu kopen"
+
+#: blocks/ln-bibliographics/build/render.php:113
+#: blocks/ln-bibliographics/src/render.php:113
+#: blocks/ln-bibliographics/build/index.js:1
+#: blocks/ln-bibliographics/src/edit.js:326
+msgid "Translation by:"
+msgstr "Vertaling door:"
+
+#: blocks/ln-bibliographics/build/render.php:116
+#: blocks/ln-bibliographics/src/render.php:116
+#: blocks/ln-bibliographics/build/index.js:1
+#: blocks/ln-bibliographics/src/edit.js:331
+msgid "Original title:"
+msgstr "Oorspronkelijke titel:"
+
+#: blocks/ln-bibliographics/build/render.php:119
+#: blocks/ln-bibliographics/src/render.php:119
+#: blocks/ln-bibliographics/build/index.js:1
+#: blocks/ln-bibliographics/src/edit.js:336
+msgid "Foreword by:"
+msgstr "Voorwoord door:"
+
+#: blocks/ln-bibliographics/build/render.php:122
+#: blocks/ln-bibliographics/src/render.php:122
+#: blocks/ln-bibliographics/build/index.js:1
+#: blocks/ln-bibliographics/src/edit.js:341
+msgid "Afterword by:"
+msgstr "Nawoord door:"
+
+#: blocks/ln-bibliographics/build/render.php:125
+#: blocks/ln-bibliographics/src/render.php:125
+#: blocks/ln-bibliographics/build/index.js:1
+#: blocks/ln-bibliographics/src/edit.js:346
+msgid "Illustrations by:"
+msgstr "Illustraties door:"
+
+#: blocks/ln-bibliographics/build/render.php:128
+#: blocks/ln-bibliographics/src/render.php:128
+#: blocks/ln-bibliographics/build/index.js:1
+#: blocks/ln-bibliographics/src/edit.js:351
+msgid "Publisher:"
+msgstr "Uitgever:"
+
+#: blocks/ln-bibliographics/build/render.php:131
+#: blocks/ln-bibliographics/ln-bibliographics.php:132
+#: blocks/ln-bibliographics/src/render.php:131
+#: blocks/ln-bibliographics/build/index.js:1
+#: blocks/ln-bibliographics/src/edit.js:356
+msgid "ISBN"
+msgstr "ISBN"
+
+#: blocks/ln-bibliographics/build/render.php:137
+#: blocks/ln-bibliographics/src/render.php:137
+#: blocks/ln-bibliographics/build/index.js:1
+#: blocks/ln-bibliographics/src/edit.js:364
+msgid "Price:"
+msgstr "Prijs:"
+
+#: blocks/ln-bibliographics/ln-bibliographics-rest.php:13
+msgid "ISBN is empty."
+msgstr "ISBN is leeg."
+
+#: blocks/ln-bibliographics/ln-bibliographics-rest.php:30
+msgid "Failed to fetch bibliographic data."
+msgstr "Ophalen van bibliografische gegevens mislukt."
+
+#. translators: %s: ISBN number.
+#: blocks/ln-bibliographics/ln-bibliographics-rest.php:93
+#, php-format
+msgid "Cover image fetched for ISBN %s"
+msgstr "Omslagafbeelding opgehaald voor ISBN %s"
+
+#: blocks/ln-bibliographics/ln-bibliographics.php:121
+msgid "Buy with Libris"
+msgstr "Kopen bij Libris"
+
+#: blocks/ln-bibliographics/ln-bibliographics.php:125
+msgid "Buy with Bol"
+msgstr "Kopen bij Bol"
+
+#: blocks/ln-bibliographics/ln-bibliographics.php:136
+msgid "Book title"
+msgstr "Boektitel"
+
+#: blocks/ln-bibliographics/ln-bibliographics.php:140
+#: blocks/ln-year-archive/build/view.js:1 blocks/ln-year-archive/src/view.js:6
+msgid "Author"
+msgstr "Auteur"
+
+#: blocks/ln-bibliographics/ln-bibliographics.php:144
+msgid "Author website"
+msgstr "Website auteur"
+
+#: blocks/ln-bibliographics/ln-bibliographics.php:148
+msgid "Publisher"
+msgstr "Uitgever"
+
+#: blocks/ln-bibliographics/ln-bibliographics.php:152
+msgid "Publisher website"
+msgstr "Website uitgever"
+
+#: blocks/ln-bibliographics/ln-bibliographics.php:156
+msgid "Number of pages"
+msgstr "Aantal pagina's"
+
+#: blocks/ln-bibliographics/ln-bibliographics.php:160
+msgid "Price"
+msgstr "Prijs"
+
+#: blocks/ln-bibliographics/ln-bibliographics.php:164
+msgid "Free line"
+msgstr "Vrije regel"
+
+#: blocks/ln-bibliographics/ln-bibliographics.php:168
+msgid "Translation by"
+msgstr "Vertaling door"
+
+#: blocks/ln-bibliographics/ln-bibliographics.php:172
+msgid "Original title"
+msgstr "Oorspronkelijke titel"
+
+#: blocks/ln-bibliographics/ln-bibliographics.php:176
+msgid "Afterword by"
+msgstr "Nawoord door"
+
+#: blocks/ln-bibliographics/ln-bibliographics.php:180
+msgid "Illustrations by"
+msgstr "Illustraties door"
+
+#: blocks/ln-bibliographics/ln-bibliographics.php:184
+msgid "Cover image URL"
+msgstr "Omslagafbeelding URL"
+
+#: blocks/ln-bibliographics/ln-bibliographics.php:188
+msgid "Cover image ID"
+msgstr "Omslagafbeelding ID"
+
+#: blocks/ln-donation/build/render.php:14 blocks/ln-donation/src/render.php:14
+msgid "LN Donation – hello from a dynamic block!"
+msgstr "LN Donatie - hallo vanuit een dynamisch blok!"
+
+#: blocks/ln-year-archive/build/render.php:305
+#: blocks/ln-year-archive/src/render.php:305
+msgid "Archive mode"
+msgstr "Archiefmodus"
+
+#: blocks/ln-year-archive/build/render.php:306
+#: blocks/ln-year-archive/src/render.php:306
+msgid "Image"
+msgstr "Beeld"
+
+#: blocks/ln-year-archive/build/render.php:307
+#: blocks/ln-year-archive/src/render.php:307
+msgid "Text"
+msgstr "Tekst"
+
+#: blocks/ln-year-archive/build/render.php:310
+#: blocks/ln-year-archive/src/render.php:310
+msgid "Archive years"
+msgstr "Archiefjaren"
+
+#. translators: %d: Year number, %s: Mode (image or text).
+#: blocks/ln-year-archive/build/render.php:323
+#: blocks/ln-year-archive/src/render.php:323
+#, php-format
+msgid "No results in %1$d (%2$s)."
+msgstr "Geen resultaten in %1$d (%2$s)."
+
+#. translators: %d: Year number, %s: Mode (image or text).
+#: blocks/ln-year-archive/build/render.php:323
+#: blocks/ln-year-archive/src/render.php:323
+msgid "image mode"
+msgstr "beeldmodus"
+
+#. translators: %d: Year number, %s: Mode (image or text).
+#: blocks/ln-year-archive/build/render.php:323
+#: blocks/ln-year-archive/src/render.php:323
+msgid "text mode"
+msgstr "tekstmodus"
+
+#: blocks/ln-year-archive/build/render.php:387
+#: blocks/ln-year-archive/src/render.php:387
+msgid "Archive years at bottom"
+msgstr "Archiefjaren onderaan"
+
+#: includes/ln-recensent.php:20
+msgid "Reviewers"
+msgstr "Recensenten"
+
+#: includes/ln-recensent.php:21 xln-medewerkers.php:447
+msgid "Reviewer"
+msgstr "Recensent"
+
+#: includes/ln-recensent.php:22 includes/ln-recensent.php:23
+#: includes/ln-recensent.php:24
+msgctxt "recensent"
+msgid "Add New Reviewer"
+msgstr "Nieuwe recensent toevoegen"
+
+#: includes/xln-options.php:62
+msgid "General"
+msgstr "Algemeen"
+
+#: includes/xln-options.php:65
+msgid "Dashboard"
+msgstr "Dashboard"
+
+#: includes/xln-options.php:68
+msgid "Show quick start widget"
+msgstr "Quickstart-widget tonen"
+
+#: includes/xln-options.php:75
+msgid "Cron"
+msgstr "Cron"
+
+#: includes/xln-options.php:76
+msgid "Geautomatiseerde taken"
+msgstr "Geautomatiseerde taken"
+
+#: includes/xln-options.php:79
+msgid "Breaking News Expires"
+msgstr "Breaking News verloopt."
+
+#: includes/xln-options.php:80
+msgid ""
+"Number of days after which a breaking news item expires and moves to rij 1"
+msgstr "Aantal dagen waarna Breaking News verloopt en naar rij 1 verhuist."
+
+#: includes/xln-options.php:91
+msgid "Donation"
+msgstr "Donatie"
+
+#: includes/xln-options.php:94
+msgid "Donation settings"
+msgstr "Donatie-instellingen"
+
+#: includes/xln-options.php:97
+msgid "Enable Donations"
+msgstr "Donaties inschakelen"
+
+#: includes/xln-options.php:106
+msgid "Developers"
+msgstr "Ontwikkelaars"
+
+#: includes/xln-options.php:109
+msgid "Tools"
+msgstr "Tools"
+
+#: includes/xln-options.php:112
+msgid "Enable tools page"
+msgstr "Pagina Tools inschakelen"
+
+#: includes/xln-options.php:122
+msgid "Show Ads in Admin"
+msgstr "Toon advertenties in Admin gedeelte"
+
+#: includes/xln-options.php:126
+msgid "Hide all"
+msgstr "Verberg alle"
+
+#: includes/xln-options.php:127
+msgid "Default"
+msgstr "Standaard"
+
+#: includes/xln-options.php:128
+msgid "Show all"
+msgstr "Toon alle"
+
+#: includes/xln-options.php:204
+msgid "Literair Nederland Settings"
+msgstr "Instellingen Literair Nederland"
+
+#: includes/xln-options.php:205 x-literair-nederland-blocks.php:242
+msgid "Literair Nederland"
+msgstr "Literair Nederland"
+
+#: includes/xln-quick-start-widget.php:37
+msgid "Literair Nederland – Quick Start"
+msgstr "Literair Nederland - Snelstart"
+
+#: includes/xln-quick-start-widget.php:53
+msgid ""
+"Welcome to Literair Nederland! Here are some quick links to get you started."
+msgstr ""
+"Welkom bij Literair Nederland! Hier zijn enkele snelle links om te beginnen."
+
+#: includes/xln-quick-start-widget.php:57
+msgid "Add review"
+msgstr "Add recensie"
+
+#: includes/xln-quick-start-widget.php:59
+msgid "Write a new review"
+msgstr "Write a new recensie"
+
+#: includes/xln-quick-start-widget.php:63
+msgid "Add harvest post"
+msgstr "Add oogst bericht"
+
+#: includes/xln-quick-start-widget.php:65
+msgid "Write a new harvest post"
+msgstr "Write a new oogst bericht"
+
+#: includes/xln-quick-start-widget.php:69
+msgid "Add interview"
+msgstr "Interview toevoegen"
+
+#: includes/xln-quick-start-widget.php:71
+msgid "Write a new interview"
+msgstr "Schrijf een nieuw interview"
+
+#. translators: %s: URL to settings page
+#: includes/xln-quick-start-widget.php:82
+#, php-format
+msgid "You can hide this widget in the <a href=\"%s\">LN Blocks settings</a>."
+msgstr ""
+"Deze widget kun je verbergen in de <a href=\"%s\">LN Blocks-instellingen</a>."
+
+#: includes/xln-tools.php:33 includes/xln-tools.php:34
+#: includes/xln-tools.php:167
+msgid "Literair Nederland Tools"
+msgstr "Tools van Literair Nederland"
+
+#: includes/xln-tools.php:169
+msgid ""
+"This page provides tools to assist with migrating and cleaning up content "
+"for the Literair Nederland block-based theme. Please review each tool's "
+"description and use with extreme caution, especially the cleanup tool which "
+"can delete content. Always ensure you have a backup before running any "
+"migration or cleanup operations."
+msgstr ""
+"De gereedschappen op deze pagina worden gebruikt voor migratie en opschonen. "
+"Gebruik voorzichtig. Maak een backup voor gebruik."
+
+#: includes/xln-tools.php:172
+msgid "Convert Recensenten"
+msgstr "Zet recensenten om"
+
+#: includes/xln-tools.php:176
+msgid ""
+"Convert up to 10 recensent posts at a time by moving the first inline image "
+"to the featured image. This allows you to migrate reviewers to be compatible "
+"with the block theme templates. Run multiple times until no more reviewers "
+"are found to convert."
+msgstr ""
+"Maak recensent-berichten blockthema compatible, maak eerste afbeelding in "
+"content uitgelichte afbeelding"
+
+#: includes/xln-tools.php:180
+msgid "Convert reviewers"
+msgstr "convert recensenten"
+
+#: includes/xln-tools.php:185
+msgid "Medewerker Duplicate Cleanup"
+msgstr "Medewerkers verwijder duplicaten"
+
+#: includes/xln-tools.php:186
+msgid ""
+"Preview checks all duplicate medewerker posts. Execute processes up to 10 "
+"duplicates per click and applies changes."
+msgstr "Preview dedup tool"
+
+#: includes/xln-tools.php:189
+msgid "Dry-run page"
+msgstr "Dry run tool"
+
+#: includes/xln-tools.php:193
+msgid "Dry-run items per page"
+msgstr "Aantal items in dry run"
+
+#: includes/xln-tools.php:199
+msgid "Preview Cleanup (no changes)"
+msgstr "Preview opschonen"
+
+#: includes/xln-tools.php:202
+msgid "Run Cleanup (max 10 duplicates per click)"
+msgstr "Run opschonen (maximaal 10 duplicaten per klik)"
+
+#: includes/xln-tools.php:217 includes/xln-tools.php:686
+msgid "Insufficient permissions."
+msgstr "Onvoldoende rechten."
+
+#: includes/xln-tools.php:238
+msgid "No duplicate medewerker posts found."
+msgstr "Geen duplicaten van medewerkers gevonden"
+
+#: includes/xln-tools.php:699
+msgid "No reviewers found to migrate."
+msgstr "No recensenten found to migrate."
+
+#. translators: 1: migrated count, 2: attempted count
+#: includes/xln-tools.php:731
+#, php-format
+msgid "Migrated %1$d of %2$d reviewers."
+msgstr "Migrated %1$d of %2$d recensenten."
+
+#. translators: %s: comma-separated post IDs
+#: includes/xln-tools.php:739
+#, php-format
+msgid "Failed IDs: %s."
+msgstr "Mislukte ID's: %s."
+
+#: includes/xln-tools.php:793
+msgid "Invalid reviewer post."
+msgstr "Invalid recensent post."
+
+#: includes/xln-tools.php:805
+msgid "Image tag has no src attribute."
+msgstr "Afbeeldingstag heeft geen src-attribuut."
+
+#: includes/xln-tools.php:878
+msgid "Could not resolve attachment ID for image."
+msgstr "Kon bijlage-ID voor afbeelding niet bepalen."
+
+#: includes/xln-tools.php:886
+msgid "Failed to process post content."
+msgstr "Verwerken van berichtinhoud mislukt."
+
+#: x-literair-nederland-blocks.php:189
+msgid "Jong Literair Nederland"
+msgstr "Jong Literair Nederland"
+
+#: xln-medewerkers.php:329 xln-medewerkers.php:351
+msgid "Invalid relationship field."
+msgstr "Ongeldig relatieveld."
+
+#: xln-medewerkers.php:355
+msgid "Please enter a name first."
+msgstr "Voer eerst een naam in."
+
+#: xln-medewerkers.php:445
+msgid "Authors"
+msgstr "Auteurs"
+
+#: xln-medewerkers.php:446
+msgid "Contributor"
+msgstr "Medewerker"
+
+#: xln-medewerkers.php:448
+msgid "Search for a contributor"
+msgstr "Zoek een medewerker"
+
+#: xln-medewerkers.php:449
+msgid "Search for a reviewer"
+msgstr "Zoek een recensent"
+
+#: xln-medewerkers.php:450
+msgid "Create new contributor"
+msgstr "Nieuwe medewerker aanmaken"
+
+#: xln-medewerkers.php:451
+msgid "Create new reviewer"
+msgstr "Nieuwe recensent aanmaken"
+
+#: xln-medewerkers.php:452
+msgid "Contributor linked."
+msgstr "Medewerker gekoppeld."
+
+#: xln-medewerkers.php:453
+msgid "Reviewer linked."
+msgstr "Recensent gekoppeld."
+
+#: xln-medewerkers.php:454
+msgid "New contributor created and linked."
+msgstr "Nieuwe medewerker aangemaakt en gekoppeld."
+
+#: xln-medewerkers.php:455
+msgid "New reviewer created and linked."
+msgstr "Nieuwe recensent aangemaakt en gekoppeld."
+
+#: xln-medewerkers.php:456
+msgid "Searching..."
+msgstr "Bezig met zoeken..."
+
+#: xln-medewerkers.php:457
+msgid "No results found."
+msgstr "Geen resultaten gevonden."
+
+#: xln-medewerkers.php:458
+msgid "Type at least 2 characters to search."
+msgstr "Typ minstens 2 tekens om te zoeken."
+
+#: xln-medewerkers.php:459
+msgid ""
+"Fill in a contributor or a reviewer. If you choose one, the other field is "
+"cleared automatically."
+msgstr ""
+"Vul een medewerker of een recensent in. Als je er een kiest, wordt het "
+"andere veld automatisch leeggemaakt."
+
+#: xln-medewerkers.php:497 xln-medewerkers.php:502
+msgid "By:"
+msgstr "Door:"
+
+#: xln-medewerkers.php:517
+msgid "No linked author"
+msgstr "Geen gekoppelde auteur"
+
+#: blocks/ln-ad/build/index.js:70 blocks/ln-ad/src/edit.js:32
+#: blocks/ln-ad/build/index.js:32
+#, fuzzy
+#| msgid "Donation"
+msgid "Position"
+msgstr "Donatie"
+
+#: blocks/ln-ad/build/index.js:75 blocks/ln-ad/src/edit.js:35
+#: blocks/ln-ad/build/index.js:35
+msgid "e.g. sidebar-1"
+msgstr "bijv. sidebar-1"
+
+#: blocks/ln-ad/build/index.js:77 blocks/ln-ad/src/edit.js:38
+#: blocks/ln-ad/build/index.js:38
+msgid "Fallback type"
+msgstr "Soort van Fallback"
+
+#: blocks/ln-ad/build/index.js:80 blocks/ln-ad/src/edit.js:41
+#: blocks/ln-ad/build/index.js:41
+msgid "None"
+msgstr "Geen"
+
+#: blocks/ln-ad/build/index.js:83 blocks/ln-ad/src/edit.js:42
+#: blocks/ln-ad/build/index.js:42
+msgid "HTML"
+msgstr "HTML"
+
+#: blocks/ln-ad/build/index.js:86 blocks/ln-ad/src/edit.js:43
+#: blocks/ln-ad/build/index.js:43
+#, fuzzy
+#| msgid "X LN Blocks"
+msgid "Block"
+msgstr "X LN Blocks"
+
+#: blocks/ln-ad/build/index.js:93 blocks/ln-ad/src/edit.js:49
+#: blocks/ln-ad/build/index.js:49
+msgid "Fallback HTML"
+msgstr "Fallback HTML"
+
+#: blocks/ln-ad/build/index.js:102 blocks/ln-ad/src/edit.js:57
+#: blocks/ln-ad/build/index.js:57
+msgid "LN Ad - rendered on the frontend."
+msgstr "LN Ad - frontend gerenderd"
+
+#: blocks/ln-anniversary/build/index.js:1 blocks/ln-anniversary/src/edit.js:7
+msgid "News"
+msgstr "Nieuws"
+
+#: blocks/ln-anniversary/build/index.js:1 blocks/ln-anniversary/src/edit.js:8
+#, fuzzy
+#| msgid "Reviewers"
+msgid "Reviews"
+msgstr "Recensenten"
+
+#: blocks/ln-anniversary/build/index.js:1 blocks/ln-anniversary/src/edit.js:9
+#, fuzzy
+#| msgctxt "block title"
+#| msgid "Harvest"
+msgid "Harvest"
+msgstr "Oogst"
+
+#: blocks/ln-anniversary/build/index.js:1 blocks/ln-anniversary/src/edit.js:27
+msgid "Categories"
+msgstr "Categorieën"
+
+#: blocks/ln-anniversary/build/index.js:1 blocks/ln-anniversary/src/edit.js:42
+msgid "Anniversary post - rendered on the frontend."
+msgstr "Jaarpost - frontend gerenderd."
+
+#: blocks/ln-bibliographics/build/index.js:1
+#: blocks/ln-bibliographics/src/auto-insert-bibliographics.js:366
+msgid ""
+"This post was automatically converted to the LN Block Theme. Click Save to "
+"keep this layout."
+msgstr ""
+"Dit bericht is automatisch omgezet naar het Blokthema. Klik op Opslaan om te "
+"bewaren."
+
+#: blocks/ln-bibliographics/build/index.js:1
+#: blocks/ln-bibliographics/src/edit.js:279
+#: blocks/ln-bibliographics/src/edit.js:369
+msgid "Buy button"
+msgstr "Koop-knop"
+
+#: blocks/ln-bibliographics/build/index.js:1
+#: blocks/ln-bibliographics/src/edit.js:283
+msgid "Show buy button"
+msgstr "Toon Koop-knop"
+
+#: blocks/ln-bibliographics/build/index.js:1
+#: blocks/ln-bibliographics/src/edit.js:290
+msgid "Design"
+msgstr "Ontwerp"
+
+#: blocks/ln-bibliographics/build/index.js:1
+#: blocks/ln-bibliographics/src/edit.js:292
+msgid "Sticky"
+msgstr "Sticky"
+
+#: blocks/ln-bibliographics/build/index.js:1
+#: blocks/ln-bibliographics/src/edit.js:207
+#, fuzzy
+#| msgid "Cover image ID"
+msgid "Change cover image"
+msgstr "Omslagafbeelding ID"
+
+#: blocks/ln-bibliographics/build/index.js:1
+#: blocks/ln-bibliographics/src/edit.js:208
+#, fuzzy
+#| msgid "Cover image ID"
+msgid "Select cover image"
+msgstr "Omslagafbeelding ID"
+
+#: blocks/ln-bibliographics/build/index.js:1
+#: blocks/ln-bibliographics/src/edit.js:218
+#, fuzzy
+#| msgid "Cover image ID"
+msgid "Remove cover image"
+msgstr "Omslagafbeelding ID"
+
+#: blocks/ln-bibliographics/build/index.js:1
+#: blocks/ln-bibliographics/src/edit.js:242
+#, fuzzy
+#| msgid "Failed to fetch bibliographic data."
+msgid "Fetching bibliographics..."
+msgstr "Ophalen van bibliografische gegevens mislukt."
+
+#: blocks/ln-bibliographics/build/index.js:1
+#: blocks/ln-bibliographics/src/edit.js:243
+#, fuzzy
+#| msgctxt "block title"
+#| msgid "Bibliographic"
+msgid "Fetch bibliographics"
+msgstr "Bibliografisch"
+
+#: blocks/ln-bibliographics/build/index.js:1
+#: blocks/ln-bibliographics/src/edit.js:312
+msgid "Click here to edit"
+msgstr "Klik om te bewerken"
+
+#: blocks/ln-boek/build/index.js:1 blocks/ln-boek/src/edit.js:22
+msgid "Add text…"
+msgstr "Voeg tekst toe"
+
+#: blocks/ln-boek/build/index.js:1 blocks/ln-boek/src/edit.js:61
+#, fuzzy
+#| msgctxt "block title"
+#| msgid "Bibliographic"
+msgid "Bibliographics position"
+msgstr "Bibliografisch"
+
+#: blocks/ln-boek/build/index.js:1 blocks/ln-boek/src/edit.js:65
+msgid "Place bibliographics at bottom"
+msgstr "Zet bibliografische informatie onderaan"
+
+#: blocks/ln-boek/build/index.js:1 blocks/ln-boek/src/edit.js:68
+msgid "Currently shown below the text."
+msgstr "Staat onder de tekst"
+
+#: blocks/ln-boek/build/index.js:1 blocks/ln-boek/src/edit.js:69
+msgid "Currently shown to the right of the text."
+msgstr "Staat rechts van de tekst"
+
+#: blocks/ln-donation/build/index.js:1 blocks/ln-donation/src/edit.js:35
+#, fuzzy
+#| msgid "LN Donation – hello from a dynamic block!"
+msgid "LN Donation – hello--donation from the editor!"
+msgstr "LN Donatie - hallo vanuit een dynamisch blok!"
+
+#: blocks/ln-oogst/build/index.js:1 blocks/ln-oogst/src/edit.js:33
+msgid "Add another book"
+msgstr "Voeg een boek toe."
+
+#: blocks/ln-query/build/index.js:242 blocks/ln-query/src/index.js:83
+#: blocks/ln-query/build/index.js:144
+msgid "Layout Position"
+msgstr "Layout positie"
+
+#: blocks/ln-query/build/index.js:246 blocks/ln-query/src/index.js:86
+#: blocks/ln-query/build/index.js:147
+msgid "Select Position..."
+msgstr "Selecteer positie"
+
+#: blocks/ln-query/build/index.js:249 blocks/ln-query/src/index.js:87
+#: blocks/ln-query/build/index.js:148
+msgid "Breaking News"
+msgstr "Breaking News"
+
+#: blocks/ln-query/build/index.js:252 blocks/ln-query/src/index.js:88
+#: blocks/ln-query/build/index.js:149
+msgid "Row 0"
+msgstr "Rij 0"
+
+#: blocks/ln-query/build/index.js:255 blocks/ln-query/src/index.js:89
+#: blocks/ln-query/build/index.js:150
+msgid "Row 1"
+msgstr "Rij 1"
+
+#: blocks/ln-query/build/index.js:266 blocks/ln-query/src/index.js:101
+#: blocks/ln-query/build/index.js:162
+msgid "Query Type"
+msgstr "Soort query"
+
+#: blocks/ln-query/build/index.js:270 blocks/ln-query/src/index.js:104
+#: blocks/ln-query/build/index.js:165
+msgid "Regular"
+msgstr "Regulier"
+
+#: blocks/ln-query/build/index.js:273 blocks/ln-query/src/index.js:105
+#: blocks/ln-query/build/index.js:166
+msgid "Related"
+msgstr "Grelateerd"
+
+#: blocks/ln-query/build/index.js:276 blocks/ln-query/src/index.js:106
+#: blocks/ln-query/build/index.js:167
+#, fuzzy
+#| msgid "Reviewer"
+msgid "By Reviewer"
+msgstr "Recensent"
+
+#: blocks/ln-query/build/index.js:287 blocks/ln-query/src/index.js:118
+#: blocks/ln-query/build/index.js:179
+msgid "Order By"
+msgstr "Sorteren"
+
+#: blocks/ln-query/build/index.js:291 blocks/ln-query/src/index.js:127
+#: blocks/ln-query/build/index.js:188
+msgid "Date ASC"
+msgstr "Datum ASC"
+
+#: blocks/ln-query/build/index.js:294 blocks/ln-query/src/index.js:128
+#: blocks/ln-query/build/index.js:189
+msgid "Date DESC"
+msgstr "Datum DESC"
+
+#: blocks/ln-query/build/index.js:297 blocks/ln-query/src/index.js:129
+#: blocks/ln-year-archive/build/view.js:1 blocks/ln-year-archive/src/view.js:7
+#: blocks/ln-query/build/index.js:190
+msgid "Title"
+msgstr "Titel"
+
+#: blocks/ln-query/build/index.js:300 blocks/ln-query/src/index.js:130
+#: blocks/ln-query/build/index.js:191
+msgid "Random"
+msgstr "Random"
+
+#: blocks/ln-year-archive/build/index.js:1
+#: blocks/ln-year-archive/src/edit.js:46
+msgid "Source data"
+msgstr "Brondata"
+
+#: blocks/ln-year-archive/build/index.js:1
+#: blocks/ln-year-archive/src/edit.js:50
+msgid "Category slugs"
+msgstr "Categorie slugs"
+
+#: blocks/ln-year-archive/build/index.js:1
+#: blocks/ln-year-archive/src/edit.js:51
+msgid "Comma-separated, for example: reviews, interviews, harvest"
+msgstr "Komma gescheiden, bijv. recensies, interviews, oogst"
+
+#: blocks/ln-year-archive/build/index.js:1
+#: blocks/ln-year-archive/src/edit.js:56
+msgid "Default mode"
+msgstr "Standaard modus"
+
+#: blocks/ln-year-archive/build/index.js:1
+#: blocks/ln-year-archive/src/edit.js:59
+msgid "Image mode"
+msgstr "Beeldmodus"
+
+#: blocks/ln-year-archive/build/index.js:1
+#: blocks/ln-year-archive/src/edit.js:60 blocks/ln-year-archive/src/edit.js:107
+msgid "Text mode"
+msgstr "Tekstmodus"
+
+#: blocks/ln-year-archive/build/index.js:1
+#: blocks/ln-year-archive/src/edit.js:65
+msgid "Default year"
+msgstr ""
+
+#: blocks/ln-year-archive/build/index.js:1
+#: blocks/ln-year-archive/src/edit.js:66
+msgid "0 means: current year."
+msgstr ""
+
+#: blocks/ln-year-archive/build/index.js:1
+#: blocks/ln-year-archive/src/edit.js:73
+msgid "Allow cover fallback"
+msgstr ""
+
+#: blocks/ln-year-archive/build/index.js:1
+#: blocks/ln-year-archive/src/edit.js:80
+#, fuzzy
+#| msgid "image mode"
+msgid "Grid (image mode)"
+msgstr "beeldmodus"
+
+#: blocks/ln-year-archive/build/index.js:1
+#: blocks/ln-year-archive/src/edit.js:84
+msgid "Columns desktop"
+msgstr ""
+
+#: blocks/ln-year-archive/build/index.js:1
+#: blocks/ln-year-archive/src/edit.js:91
+msgid "Columns tablet"
+msgstr ""
+
+#: blocks/ln-year-archive/build/index.js:1
+#: blocks/ln-year-archive/src/edit.js:98
+msgid "Columns mobile"
+msgstr ""
+
+#: blocks/ln-year-archive/build/index.js:1
+#: blocks/ln-year-archive/src/edit.js:111
+msgid "Max posts (0 = unlimited)"
+msgstr ""
+
+#: blocks/ln-year-archive/build/index.js:1
+#: blocks/ln-year-archive/src/edit.js:118
+#, fuzzy
+#| msgid "No linked author"
+msgid "Show book author"
+msgstr "Geen gekoppelde auteur"
+
+#: blocks/ln-year-archive/build/index.js:1
+#: blocks/ln-year-archive/src/edit.js:123
+#, fuzzy
+#| msgid "Book title"
+msgid "Show book title"
+msgstr "Boektitel"
+
+#: blocks/ln-year-archive/build/index.js:1
+#: blocks/ln-year-archive/src/edit.js:128
+#, fuzzy
+#| msgid "Search for a reviewer"
+msgid "Show reviewer"
+msgstr "Zoek een recensent"
+
+#: blocks/ln-year-archive/build/index.js:1
+#: blocks/ln-year-archive/src/edit.js:133
+msgid "Show date"
+msgstr "Toon datum"
+
+#: blocks/ln-year-archive/build/index.js:1
+#: blocks/ln-year-archive/src/edit.js:140
+msgid "Advanced"
+msgstr "Geavanceerd"
+
+#: blocks/ln-year-archive/build/index.js:1
+#: blocks/ln-year-archive/src/edit.js:144
+msgid "Query variable for year"
+msgstr "Query variabele voor jaar"
+
+#: blocks/ln-year-archive/build/index.js:1
+#: blocks/ln-year-archive/src/edit.js:149
+msgid "Query variable for mode"
+msgstr "Query variabele voor mode"
+
+#: blocks/ln-year-archive/build/index.js:1
+#: blocks/ln-year-archive/src/edit.js:158
+msgid ""
+"Frontend block with year navigation and image/text mode. Only a placeholder "
+"is shown in the editor."
+msgstr ""
+"Frontend blok met jaar overzicht in afbeelding/tekst mode. In de editor "
+"staat alleen een placeholder"
+
+#: blocks/ln-year-archive/build/view.js:1 blocks/ln-year-archive/src/view.js:8
+#, fuzzy
+#| msgid "By:"
+msgid "By"
+msgstr "Door:"
+
+#: blocks/ln-year-archive/build/view.js:1 blocks/ln-year-archive/src/view.js:9
+msgid "Date"
+msgstr "Datum"
+
+#: includes/ln-jln-social-icon/jong-social-link-variation.js:47
+#, fuzzy
+#| msgid "Jong Literair Nederland"
+msgctxt "social link block variation name"
+msgid "Jong Literair Nederland"
+msgstr "Jong Literair Nederland"
+
+#: blocks/ln-ad/build/block.json blocks/ln-ad/src/block.json
+msgctxt "block title"
+msgid "LN Ad"
+msgstr "LN Advertentie"
+
+#: blocks/ln-ad/build/block.json blocks/ln-ad/src/block.json
+msgctxt "block description"
+msgid "Ad block with date, position, and fallback."
+msgstr "Advertentieblok met datum, positie en fallback."
+
+#: blocks/ln-anniversary/build/block.json blocks/ln-anniversary/src/block.json
+msgctxt "block title"
+msgid "LN Anniversary Post"
+msgstr "LN Jubileumpost"
+
+#: blocks/ln-anniversary/build/block.json blocks/ln-anniversary/src/block.json
+msgctxt "block description"
+msgid "Shows the post that is closest to exactly 25 (or 10) years ago."
+msgstr ""
+"Toont de post die het dichtst bij precies 25 (of 10) jaar geleden valt."
+
+#: blocks/ln-bibliographics/build/block.json
+#: blocks/ln-bibliographics/src/block.json
+msgctxt "block title"
+msgid "Bibliographic"
+msgstr "Bibliografisch"
+
+#: blocks/ln-bibliographics/build/block.json
+#: blocks/ln-bibliographics/src/block.json
+msgctxt "block description"
+msgid "Block with title info."
+msgstr "Blok met titelinformatie."
+
+#: blocks/ln-boek/build/block.json blocks/ln-boek/src/block.json
+msgctxt "block title"
+msgid "Book"
+msgstr "Boek"
+
+#: blocks/ln-boek/build/block.json blocks/ln-boek/src/block.json
+msgctxt "block description"
+msgid "Book description with bibliographics information."
+msgstr ""
+
+#: blocks/ln-donation/build/block.json blocks/ln-donation/src/block.json
+msgctxt "block title"
+msgid "LN Donation"
+msgstr "LN Donatie"
+
+#: blocks/ln-donation/build/block.json blocks/ln-donation/src/block.json
+msgctxt "block description"
+msgid "Donation embed block"
+msgstr "Donatie-embedblok"
+
+#: blocks/ln-oogst/build/block.json blocks/ln-oogst/src/block.json
+msgctxt "block title"
+msgid "Harvest"
+msgstr "Oogst"
+
+#: blocks/ln-oogst/build/block.json blocks/ln-oogst/src/block.json
+msgctxt "block description"
+msgid "Wrapper for multiple Book blocks with a handy add button."
+msgstr "Wrapper voor meerdere Boek-blokken met een handige toevoegen-knop."
+
+#: blocks/ln-year-archive/build/block.json
+#: blocks/ln-year-archive/src/block.json
+msgctxt "block title"
+msgid "LN Year Archive"
+msgstr "LN Jaararchief"
+
+#: blocks/ln-year-archive/build/block.json
+#: blocks/ln-year-archive/src/block.json
+msgctxt "block description"
+msgid "Shows a year-based archive with image mode and text mode."
+msgstr "Toont een jaargebaseerd archief met beeldmodus en tekstmodus."

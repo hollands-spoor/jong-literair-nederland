@@ -1,0 +1,18 @@
+{
+    "translation-revision-date": "YEAR-MO-DA HO:MI+ZONE",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "blocks\/ln-bibliographics\/src\/auto-insert-bibliographics.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "nl_NL",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "This post was automatically converted to the LN Block Theme. Click Save to keep this layout.": [
+                "Dit bericht is automatisch omgezet naar het LN Blokthema. Klik op Opslaan om deze opmaak te bewaren."
+            ]
+        }
+    }
+}

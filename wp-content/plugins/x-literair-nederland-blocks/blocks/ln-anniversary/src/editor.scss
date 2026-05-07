@@ -1,0 +1,16 @@
+.ln-anniversary--editor {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 48px;
+	border: 1px dashed #aaa;
+	border-radius: 4px;
+	padding: 12px;
+	background: #f9f9f9;
+	color: #888;
+	font-style: italic;
+
+	.ln-anniversary__editor-label {
+		font-size: 0.9em;
+	}
+}

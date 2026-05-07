@@ -1,0 +1,22 @@
+
+
+.ln-boek--bibliographics-bottom > .wp-block-columns{
+    display: flex;
+    flex-wrap: wrap !important;
+	width: 66%;
+}
+
+.ln-boek--bibliographics-bottom > .wp-block-columns > .wp-block-column {
+    flex-basis: 100% !important;
+	border-left: 0 !important;
+}
+
+.ln-boek--bibliographics-bottom > .wp-block-columns > .wp-block-column:not(:first-child) > *:first-child {
+	border-top: var(--wp--ln--divider-width) solid var(--wp--ln--divider-color);
+	padding-top: var(--wp--ln--half--gap-width);
+}
+
+.single-post .wp-block-columns.ln-padding .wp-block-column .ln-boek--bibliographics-bottom .wp-block-columns .wp-block-column.ln-padding {
+	padding-left: 0;
+	padding-right: 0;
+}

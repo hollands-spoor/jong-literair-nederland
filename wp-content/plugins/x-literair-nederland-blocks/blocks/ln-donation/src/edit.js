@@ -32,7 +32,7 @@ import './editor.scss';
 export default function Edit() {
 	return (
 		<p { ...useBlockProps() }>
-			{ __( 'LN Donation – hello--donation from the editor!', 'ln-donation' ) }
+				{ __( 'LN Donation – hello--donation from the editor!', 'x-literair-nederland-blocks' ) }
 		</p>
 	);
 }

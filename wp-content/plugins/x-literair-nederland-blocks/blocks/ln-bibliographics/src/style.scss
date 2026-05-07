@@ -6,7 +6,51 @@
  */
 
 .wp-block-ln-ln-bibliographics {
-	background-color: #21759b;
-	color: #fff;
 	padding: 2px;
+}
+
+.wp-block-ln-ln-bibliographics .ln-bibliographics__cover {
+	display: block;
+	width: 100%;
+	height: auto;
+	max-width: 100%;
+}
+
+
+
+.wp-block-ln-ln-bibliographics .ln-bibliographics__buy-button {
+	display: inline-flex;
+	margin-top: 1rem;
+	padding: 0.5rem 1.25rem;
+	background-color: #111;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 600;
+	border-radius: 4px;
+}
+
+.wp-block-ln-ln-bibliographics .ln-bibliographics__buy-button:hover,
+.wp-block-ln-ln-bibliographics .ln-bibliographics__buy-button:focus {
+	background-color: #333;
+}
+
+.wp-block-ln-ln-bibliographics h2.ln-boektitel {
+	font-size: 1.25em;
+	margin-top: 0.5rem;
+	margin-bottom: 0rem;
+}
+
+.wp-block-ln-ln-bibliographics p.ln-auteur {
+	font-size: 1em;
+	font-weight: 500;
+	line-height: 1em;
+	margin-top: 0.25rem;
+	margin-bottom: 1rem;
+}
+
+.wp-block-ln-ln-bibliographics p {
+	font-size: 0.9em;
+	line-height: 1.4em;
+	margin-top: 0.25rem;
+	margin-bottom: 0.25rem;
 }

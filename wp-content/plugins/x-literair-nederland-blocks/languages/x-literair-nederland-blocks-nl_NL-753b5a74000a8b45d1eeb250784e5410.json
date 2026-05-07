@@ -1,0 +1,42 @@
+{
+    "translation-revision-date": "YEAR-MO-DA HO:MI+ZONE",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "blocks\/ln-ad\/build\/index.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "nl_NL",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "Ad": [
+                "Advertentie"
+            ],
+            "Position": [
+                "Positie"
+            ],
+            "e.g. sidebar-1": [
+                "bijv. sidebar-1"
+            ],
+            "Fallback type": [
+                "Fallbacktype"
+            ],
+            "None": [
+                "Geen"
+            ],
+            "HTML": [
+                "HTML"
+            ],
+            "Block": [
+                "Blok"
+            ],
+            "Fallback HTML": [
+                "Fallback-HTML"
+            ],
+            "LN Ad - rendered on the frontend.": [
+                "LN Advertentie \u2013 wordt frontend gerenderd."
+            ]
+        }
+    }
+}
