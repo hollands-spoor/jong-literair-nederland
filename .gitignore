@@ -33,3 +33,4 @@ wp-content/uploads/*
 # Keep this file
 !.gitignore
 !.gitmodules
+!SUBMODULES.md
