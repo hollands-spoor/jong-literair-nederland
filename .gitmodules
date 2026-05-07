@@ -1,0 +1,3 @@
+[submodule "wp-content/plugins/x-literair-nederland-blocks"]
+	path = wp-content/plugins/x-literair-nederland-blocks
+	url = https://github.com/hollands-spoor/x-literair-nederland-blocks
