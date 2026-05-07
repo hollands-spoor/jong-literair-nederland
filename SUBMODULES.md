@@ -90,3 +90,28 @@ git push
 ### C. In literairnederland repo
 
 Repeat section B there as well, then deploy/test each site.
+
+
+For fast update/merger of x-ln plugin: 
+
+## 2) Update site repo pointers
+
+Do this in each site repo root:
+
+git pull
+git submodule update --remote --merge wp-content/plugins/x-literair-nederland-blocks
+git add wp-content/plugins/x-literair-nederland-blocks
+git commit -m "Bump x-literair-nederland-blocks to vX.Y.Z"
+git push
+
+## 3) Verify pinned commit in each site
+
+Run:
+
+git submodule status
+
+The line for wp-content/plugins/x-literair-nederland-blocks should point to the expected plugin commit/tag release.
+
+## 4) Rollback
+
+If a release must be reverted on a site, checkout the previous site commit that bumped the submodule pointer, or reset pointer to the previous known-good plugin commit and recommit.
