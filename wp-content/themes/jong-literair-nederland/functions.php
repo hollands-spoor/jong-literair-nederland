@@ -47,3 +47,30 @@ function jln_child_theme_enqueue_admin_assets() {
 	}
 }
 
+/**
+ * Override LN quick-start presets for JLN context.
+ *
+ * Keep LN defaults for template and block behavior and only change
+ * category slugs for JLN taxonomy naming.
+ *
+ * @param array<string, array<string, string>> $presets Quick-start presets.
+ *
+ * @return array<string, array<string, string>>
+ */
+function jln_override_new_post_presets( array $presets ): array {
+	if ( empty( $presets['review'] ) || ! is_array( $presets['review'] ) ) {
+		$presets['review'] = [];
+	}
+
+	$presets['review']['category_slug'] = 'recensie';
+
+	if ( empty( $presets['oogst'] ) || ! is_array( $presets['oogst'] ) ) {
+		$presets['oogst'] = [];
+	}
+
+	$presets['oogst']['category_slug'] = 'jonge-oogst';
+
+	return $presets;
+}
+add_filter( 'xln_new_post_presets', 'jln_override_new_post_presets' );
+
