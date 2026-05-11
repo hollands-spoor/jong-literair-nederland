@@ -1,0 +1,178 @@
+{
+	"$schema": "https://schemas.wp.org/wp/6.9/theme.json",
+	"version": 3,
+	"settings": {
+		"appearanceTools": true,
+		"layout": {
+			"contentSize": "1000px",
+			"wideSize": "1400px"
+		},
+		"spacing": {
+			"units": [
+				"%",
+				"px",
+				"em",
+				"rem",
+				"vh",
+				"vw"
+			]
+		},
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFace": [
+						{
+							"fontFamily": "\"Barlow Condensed\"",
+							"fontStyle": "normal",
+							"fontWeight": "500",
+							"src": [
+								"file:./assets/fonts/barlow-condensed/barlow-condensed-500-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Barlow Condensed\"",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/barlow-condensed/barlow-condensed-400-normal.woff2"
+							]
+						}
+					],
+					"fontFamily": "\"Barlow Condensed\", sans-serif",
+					"name": "Barlow Condensed",
+					"slug": "barlow-condensed"
+				},
+				{
+					"fontFace": [
+						{
+							"fontFamily": "\"Roboto Slab\"",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/roboto-slab/roboto-slab-400-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Roboto Slab\"",
+							"fontStyle": "normal",
+							"fontWeight": "600",
+							"src": [
+								"file:./assets/fonts/roboto-slab/roboto-slab-600-normal.woff2"
+							]
+						}
+					],
+					"fontFamily": "\"Roboto Slab\", serif",
+					"name": "Roboto Slab",
+					"slug": "roboto-slab"
+				},
+				{
+					"fontFace": [
+						{
+							"fontFamily": "Alegreya",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/alegreya/alegreya-400-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "Alegreya",
+							"fontStyle": "normal",
+							"fontWeight": "600",
+							"src": [
+								"file:./assets/fonts/alegreya/alegreya-600-normal.woff2"
+							]
+						}
+					],
+					"fontFamily": "Alegreya, serif",
+					"name": "Alegreya",
+					"slug": "alegreya"
+				}
+			]
+		},
+		"useRootPaddingAwareAlignments": true
+	},
+	"styles": {
+		"blocks": {
+			"core/button": {
+				"border": {
+					"radius": {
+						"bottomLeft": "2px",
+						"bottomRight": "2px",
+						"topLeft": "2px",
+						"topRight": "2px"
+					}
+				}
+			},
+			"core/site-title": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--garamond-title)"
+				}
+			}
+		},
+		"elements": {
+			"button": {
+				"color": {
+					"background": "var:preset|color|black"
+				},
+				"spacing": {
+					"padding": {
+						"top": "0.5em",
+						"right": "1.25em",
+						"bottom": "0.5em",
+						"left": "1.25em"
+					}
+				},
+				"border": {
+					"radius": "2px"
+				}
+			},
+			"h3": {
+				"typography": {
+					"fontSize": "1.6em"
+				}
+			},
+			"h5": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--medium)"
+				}
+			},
+			"heading": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--barlow-condensed)",
+					"fontStyle": "normal",
+					"fontWeight": "500"
+				}
+			},
+			"link": {
+				":hover": {
+					"color": {
+						"text": "#999999"
+					}
+				},
+				"color": {
+					"text": "var(--wp--preset--color--black)"
+				}
+			}
+		},
+		"spacing": {
+			"blockGap": "1em"
+		},
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--alegreya)",
+			"fontSize": "1.25em",
+			"fontWeight": "400",
+			"lineHeight": "1.4"
+		}
+	},
+	"templateParts": [
+		{
+			"area": "header",
+			"name": "header"
+		},
+		{
+			"area": "footer",
+			"name": "footer"
+		}
+	]
+}
