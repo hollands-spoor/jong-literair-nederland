@@ -3,6 +3,35 @@
 	"version": 3,
 	"settings": {
 		"appearanceTools": true,
+		"color": {
+			"palette": [
+				{
+					"name": "White",
+					"slug": "white",
+					"color": "#ffffff"
+				},
+				{
+					"name": "Black",
+					"slug": "black",
+					"color": "#000000"
+				},
+				{
+					"name": "Darkgrey",
+					"slug": "darkgrey",
+					"color": "darkgrey"
+				},
+				{
+					"name": "Teal",
+					"slug": "teal",
+					"color": "#14ccb0"
+				},
+				{
+					"name": "Orange",
+					"slug": "orange",
+					"color": "#cc430a"
+				}
+			]
+		},
 		"layout": {
 			"contentSize": "1000px",
 			"wideSize": "1400px"
