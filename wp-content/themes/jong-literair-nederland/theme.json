@@ -148,7 +148,7 @@
 			},
 			"core/site-title": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--garamond-title)"
+					"fontFamily": "var(--wp--preset--font-family--barlow-condensed)"
 				}
 			}
 		},
