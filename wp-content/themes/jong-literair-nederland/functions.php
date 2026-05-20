@@ -2,6 +2,7 @@
 
 add_action( 'wp_enqueue_scripts', 'jln_child_theme_enqueue_assets' );
 add_action( 'admin_enqueue_scripts', 'jln_child_theme_enqueue_admin_assets' );
+add_action( 'after_setup_theme', 'jln_theme_setup_editor_styles' );
 /**
  * Load parent + child theme assets compiled via Webpack.
  */
@@ -45,6 +46,14 @@ function jln_child_theme_enqueue_admin_assets() {
 			true
 		);
 	}
+}
+
+/**
+ * Load theme styles inside the block editor.
+ */
+function jln_theme_setup_editor_styles() {
+	add_theme_support( 'editor-styles' );
+	add_editor_style( 'css/editor-style.css' );
 }
 
 /**

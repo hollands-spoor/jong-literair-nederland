@@ -1,0 +1,32 @@
+/* Editor-only styles for Jong Literair Nederland */
+
+.editor-styles-wrapper .error-404-container {
+  position: relative;
+  top: 10vw;
+}
+
+.editor-styles-wrapper .error-404-splash {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.editor-styles-wrapper .error404 .error-404-splash .wp-block-jln-jln-logo.has-logo-2 {
+  width: 20vw;
+  height: 20vw;
+}
+
+.editor-styles-wrapper .error-404-title {
+  position: absolute;
+  top: 50%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  margin: 0;
+}
+
+.editor-styles-wrapper .error-404-title h1.wp-block-heading,
+.editor-styles-wrapper .error-404-titleh1.wp-block-heading {
+  font-size: 4vw;
+}

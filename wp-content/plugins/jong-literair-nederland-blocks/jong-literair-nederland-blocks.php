@@ -36,6 +36,10 @@ foreach ( $jong_ln_blocks as $relative_dir ) {
 function jong_ln_blocks_init() {
 	global $jong_ln_blocks;
 
+	if ( ! is_array( $jong_ln_blocks ) ) {
+		$jong_ln_blocks = array( 'blocks/jln-floating-text', 'blocks/jln-current-year', 'blocks/jln-logo', 'blocks/jln-titel' );
+	}
+
 	foreach ( $jong_ln_blocks as $relative_dir ) {
 		$block_dir     = __DIR__ . '/' . $relative_dir;
 		$manifest_path = $block_dir . '/build/blocks-manifest.php';
@@ -54,6 +58,10 @@ function jong_ln_blocks_init() {
 		}
 
 		$manifest_data = require $manifest_path;
+		if ( ! is_array( $manifest_data ) ) {
+			continue;
+		}
+
 		foreach ( array_keys( $manifest_data ) as $block_type ) {
 			register_block_type( "{$block_dir}/build/{$block_type}" );
 		}

@@ -8,6 +8,7 @@ module.exports = (env, argv) => {
         entry: {
             main: path.resolve(__dirname, "js-src", "index.js"),
             admin: path.resolve(__dirname, "js-src", "admin.js"),
+            "editor-style": path.resolve(__dirname, "scss", "editor-style.scss"),
         },
         output: {
             path: path.resolve(__dirname),
@@ -51,7 +52,8 @@ module.exports = (env, argv) => {
         },
         plugins: [
             new MiniCssExtractPlugin({
-                filename: "css/style.css",
+                filename: ({ chunk }) =>
+                    chunk.name === "editor-style" ? "css/editor-style.css" : "css/style.css",
             }),
         ],
         resolve: {

@@ -12,6 +12,14 @@ body {
   background-color: #ffffff;
 }
 
+.wp-site-blocks main > .wp-block-group.has-background {
+  min-height: 60vh;
+}
+
+header .wp-block-jln-jln-logo.has-logo-5 {
+  min-width: 20em;
+}
+
 /* Remove margin between adjacent blocks that both have a background color. */
 .wp-site-blocks > .has-background + .has-background {
   margin-block-start: 0;
@@ -96,6 +104,38 @@ body {
   color: #f0573a;
   color: var(--jln--accent);
   text-decoration: none;
+}
+
+/* 404 page */
+.error-404-container {
+  position: relative;
+  top: 10vw;
+}
+
+.error-404-splash {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.error404 .error-404-splash .wp-block-jln-jln-logo.has-logo-2 {
+  width: 20vw;
+  min-width: 20em;
+  height: 20vw;
+}
+
+.error-404-title {
+  position: absolute;
+  top: 50%;
+  left: 48.25%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  margin: 0;
+}
+
+.error-404-title h1.wp-block-heading {
+  font-size: 4vw;
 }
 
 /*# sourceMappingURL=style.css.map*/
