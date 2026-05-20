@@ -1,0 +1,51 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+ .wp-block-ln-ln-logo a {
+    display: inline-block;
+ }
+
+ .wp-block-ln-ln-logo.has-logo-4 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+ }
+ 
+ .wp-block-ln-ln-logo a .ln-logo-jln {
+    fill: #000000;
+ }
+
+ .wp-block-ln-ln-logo a:hover .ln-logo-jln {
+    fill: #13ccb0;
+ }
+
+ .wp-block-ln-ln-logo .ln-logo-jong-wrap {
+    top: 0;
+    width: 8em;
+    /* transform: rotate(10deg); */
+ }
+
+ .wp-block-ln-ln-logo .ln-logo-jong-bezoek {
+   display:flex;
+   flex-direction: row;
+ }
+
+  .wp-block-ln-ln-logo .ln-logo-jong-wrap p {
+      font-family: var(--wp--preset--font-family--barlow-condensed);
+    text-transform: uppercase;
+    font-size: 0.75em;
+    margin: 0 0.5em;
+    font-weight: bold;  
+}
+
+  .wp-block-ln-ln-logo:hover .ln-logo-jong-wrap {
+      display:flex!important;
+  }
+  .wp-block-ln-ln-logo:hover .ln-logo-jong-wrap p {
+    color: #000;
+
+  }

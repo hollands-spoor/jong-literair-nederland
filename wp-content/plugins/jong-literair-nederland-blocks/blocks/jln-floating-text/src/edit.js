@@ -7,7 +7,7 @@ import { getTextpathSvg } from "./get_textpath_svg";
 import "./editor.scss";
 
 const DEFAULT_TEMPLATE = [
-    ["core/paragraph", { placeholder: __("Add accompanying text...", "jong-literair-nederland-blocks") }],
+    ["core/paragraph", { placeholder: __("Add accompanying text...", "jjln-blocks") }],
 ];
 
 const GUIDE_CENTER_DIAMETER = 12;
@@ -37,8 +37,8 @@ export default function Edit({ attributes, setAttributes, clientId, isSelected }
     const { text, textType, fontFamily, centerX, centerY, radius, angle, fontSize, pathId } = attributes;
     const blockRef = useRef(null);
     const [isDraggingCenter, setIsDraggingCenter] = useState(false);
-    const defaultFontOptionLabel = __("Theme default (inherit)", "jong-literair-nederland-blocks");
-    const noFontsDetectedLabel = __("No additional theme fonts detected.", "jong-literair-nederland-blocks");
+    const defaultFontOptionLabel = __("Theme default (inherit)", "jjln-blocks");
+    const noFontsDetectedLabel = __("No additional theme fonts detected.", "jjln-blocks");
     const rawFontOptions = useMemo(getFontOptionsFromWindow, []);
     const fontSelectOptions = useMemo(() => {
         const sanitized = rawFontOptions
@@ -204,23 +204,23 @@ export default function Edit({ attributes, setAttributes, clientId, isSelected }
     return (
         <>
             <InspectorControls>
-                <PanelBody title={__("Floating Text Settings", "jong-literair-nederland-blocks")}>
+                <PanelBody title={__("Floating Text Settings", "jjln-blocks")}>
                     <SelectControl
-                        label={__("Text type", "jong-literair-nederland-blocks")}
+                        label={__("Text type", "jjln-blocks")}
                         value={textType}
                         options={[
-                            { label: __("Curved", "jong-literair-nederland-blocks"), value: "curved" },
-                            { label: __("Line", "jong-literair-nederland-blocks"), value: "line" },
+                            { label: __("Curved", "jjln-blocks"), value: "curved" },
+                            { label: __("Line", "jjln-blocks"), value: "line" },
                         ]}
                         onChange={(value) => setAttributes({ textType: value })}
                     />
                     <TextControl
-                        label={__("Text", "jong-literair-nederland-blocks")}
+                        label={__("Text", "jjln-blocks")}
                         value={text}
                         onChange={(value) => setAttributes({ text: value })}
                     />
                     <SelectControl
-                        label={__("Font family", "jong-literair-nederland-blocks")}
+                        label={__("Font family", "jjln-blocks")}
                         value={fontFamily}
                         options={fontSelectOptions}
                         onChange={(value) => setAttributes({ fontFamily: value })}
@@ -228,26 +228,26 @@ export default function Edit({ attributes, setAttributes, clientId, isSelected }
                         help={fontSelectDisabled ? noFontsDetectedLabel : undefined}
                     />
                     <TextControl
-                        label={__("Center X", "jong-literair-nederland-blocks")}
+                        label={__("Center X", "jjln-blocks")}
                         type="number"
                         value={centerX}
                         onChange={handleNumberAttr("centerX")}
                     />
                     <TextControl
-                        label={__("Center Y", "jong-literair-nederland-blocks")}
+                        label={__("Center Y", "jjln-blocks")}
                         type="number"
                         value={centerY}
                         onChange={handleNumberAttr("centerY")}
                     />
                     <TextControl
-                        label={__("Radius", "jong-literair-nederland-blocks")}
+                        label={__("Radius", "jjln-blocks")}
                         type="number"
                         min={1}
                         value={radius}
                         onChange={handleNumberAttr("radius", 1)}
                     />
                     <RangeControl
-                        label={__("Angle", "jong-literair-nederland-blocks")}
+                        label={__("Angle", "jjln-blocks")}
                         value={angle}
                         onChange={(value) => setAttributes({ angle: value ?? 0 })}
                         min={-180}
@@ -255,7 +255,7 @@ export default function Edit({ attributes, setAttributes, clientId, isSelected }
                         allowReset
                     />
                     <TextControl
-                        label={__("Font size (px)", "jong-literair-nederland-blocks")}
+                        label={__("Font size (px)", "jjln-blocks")}
                         type="number"
                         min={8}
                         value={fontSize}
@@ -268,10 +268,10 @@ export default function Edit({ attributes, setAttributes, clientId, isSelected }
                     <div className="jln-floating-text__controls">
                         <TextControl
                             className="jln-floating-text__input"
-                            label={__("Text", "jong-literair-nederland-blocks")}
+                            label={__("Text", "jjln-blocks")}
                             value={text}
                             onChange={(value) => setAttributes({ text: value })}
-                            help={__("This value is also configurable from the block inspector.", "jong-literair-nederland-blocks")}
+                            help={__("This value is also configurable from the block inspector.", "jjln-blocks")}
                         />
                     </div>
                 )}

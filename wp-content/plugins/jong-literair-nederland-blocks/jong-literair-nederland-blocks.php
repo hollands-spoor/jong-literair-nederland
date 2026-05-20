@@ -6,7 +6,7 @@
  * Requires at least: 6.7
  * Requires PHP:      7.4
  * Author:            Hollands Spoor
- * Text Domain:       jong-literair-nederland-blocks
+ * Text Domain:       jln-blocks
  *
  * @package JongLnBlocks
  */
@@ -15,7 +15,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-$jong_ln_blocks = array( 'blocks/jln-floating-text' );
+require_once __DIR__ . '/includes/jln-helpers.php';
+require_once __DIR__ . '/includes/jln-options.php';
+
+
+$jong_ln_blocks = array( 'blocks/jln-floating-text', 'blocks/jln-current-year', 'blocks/jln-logo', 'blocks/jln-titel' );
 
 foreach ( $jong_ln_blocks as $relative_dir ) {
 	$block_runtime = __DIR__ . '/' . $relative_dir . '/' . basename( $relative_dir ) . '.php';
@@ -72,7 +76,7 @@ add_filter(
 			$categories,
 			array(
 				'slug'  => $slug,
-				'title' => __( 'Literair Nederland', 'jong-literair-nederland-blocks' ),
+				'title' => __( 'Jong Literair Nederland', 'jln-blocks' ),
 				'icon'  => 'book',
 			)
 		);

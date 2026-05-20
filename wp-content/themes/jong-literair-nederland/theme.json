@@ -21,13 +21,13 @@
 					"color": "darkgrey"
 				},
 				{
-					"name": "Teal",
+					"name": "JLN Teal",
 					"slug": "teal",
 					"color": "#14ccb0"
 				},
 				{
-					"name": "Orange",
-					"slug": "orange",
+					"name": "JLN Orange",
+					"slug": "jln-orange",
 					"color": "#cc430a"
 				}
 			]
@@ -35,6 +35,9 @@
 		"layout": {
 			"contentSize": "1000px",
 			"wideSize": "1400px"
+		},
+		"custom": {
+			"column-gap": "3em"
 		},
 		"spacing": {
 			"units": [
@@ -123,6 +126,16 @@
 	},
 	"styles": {
 		"blocks": {
+			"core/columns": {
+				"spacing": {
+					"blockGap": "var(--wp--custom--column-gap)"
+				}
+			},
+			"core/post-template": {
+				"spacing": {
+					"blockGap": "var(--wp--custom--column-gap)"
+				}
+			},
 			"core/button": {
 				"border": {
 					"radius": {
@@ -185,7 +198,13 @@
 			}
 		},
 		"spacing": {
-			"blockGap": "1em"
+			"blockGap": "1em",
+			"padding": {
+				"top": "0",
+				"right": "3em",
+				"bottom": "0",
+				"left": "3em"
+			}
 		},
 		"typography": {
 			"fontFamily": "var(--wp--preset--font-family--alegreya)",

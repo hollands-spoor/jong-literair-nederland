@@ -1,0 +1,67 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "jln/jln-logo",
+  "version": "0.1.0",
+  "title": "LN Logo",
+  "category": "literair-nederland",
+  "icon": "smiley",
+  "description": "Displays the Literair Nederland logo",
+  "example": {},
+  "supports": {
+    "html": false,
+    "style": true,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "attributes": {
+    "logo_choice": {
+      "type": "number",
+      "default": 0
+    },
+    "link_url": {
+      "type": "string",
+      "default": ""
+    },
+    "new_window": {
+      "type": "boolean",
+      "default": false
+    },
+    "show_jong_text": {
+      "type": "boolean",
+      "default": true
+    },
+    "fill_font": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "fill_page": {
+      "type": "string",
+      "default": "#cc0000"
+    },
+    "fill_side": {
+      "type": "string",
+      "default": "#990000"
+    },
+    "circle_stroke": {
+      "type": "string",
+      "default": "#000000"
+    },
+    "circle_stroke_width": {
+      "type": "number",
+      "default": 2,
+      "minimum": 0,
+      "maximum": 20
+    },
+    "circle_fill": {
+      "type": "string",
+      "default": "transparent"
+    }
+  },
+  "textdomain": "jln-blocks",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

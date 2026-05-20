@@ -1,0 +1,1 @@
+{"version":3,"file":"js/admin.js","mappings":";;;;AAAAA,OAAO,CAACC,GAAG,CAAC,sDAAsD,CAAC,C","sources":["webpack://jong-literair-nederland-theme/./js-src/admin.js"],"sourcesContent":["console.log(\"Hello from the Jong Literair Nederland admin script.\");"],"names":["console","log"],"sourceRoot":""}

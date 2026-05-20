@@ -1,7 +1,100 @@
 :root {
-    --jln-accent: #f0573a;
+  --jln--accent: #f0573a;
+  --jln--floating-image-width: 8em;
+  --jln--page-margins-horizontal: 4em;
+  --jln--page-margins-vertical: 3em;
 }
 
 body {
-    background-color: #f7f7f5;
+    background-color: #ffffff;
+}
+
+
+/* Remove margin between adjacent blocks that both have a background color. */
+
+.wp-site-blocks > .has-background + .has-background {
+  margin-block-start: 0;
+}
+
+/* And also when the background color is defined a level deeper */
+
+.wp-site-blocks > *:has(> .has-background) + *:has(> .has-background) {
+  margin-block-start: 0;
+}
+
+
+.wp-site-blocks > main.has-background  {
+  padding-top: var(--wp--preset--spacing--60);
+}
+
+.wp-site-blocks > main.has-background > .has-background  {
+  padding-top: var(--jln--page-margins-vertical);
+  padding-bottom: var(--jln--page-margins-vertical);
+  padding-left: var(--jln--page-margins-horizontal);
+  padding-right: var(--jln--page-margins-horizontal);
+}
+
+/* Obsoleted by the above rule? */
+/* .wp-site-blocks > main.has-background > .has-global-padding.is-layout-constrained {
+  padding-top: var(--jln--page-margins-vertical);
+  padding-bottom: var(--jln--page-margins-vertical);
+} */
+
+
+/* This works because all elements that need this padding are in a group with a backgroundcolor set */
+/* Is this also obsoleted by the above rule? No, needed for the header */
+
+.has-background > .has-global-padding.is-layout-constrained {
+  padding-left: var(--jln--page-margins-horizontal);
+  padding-right: var(--jln--page-margins-horizontal);
+}
+
+
+
+/* For the inline floating images */
+.mpt figure.wp-block-post-featured-image, .mpt li figure.wp-block-post-featured-image {
+    width: var(--jln--floating-image-width);
+    margin-left: 1em;
+    float: right;
+}
+
+
+/*bladspiegel op archief pagina's  */
+/* To wide a rule */
+/*where(.wp-block-columns.has-background){
+  padding: 10em;
+}
+  */
+
+
+.wp-block-query.jln-omslagen>ul {
+    gap: .5em;
+    align-items: stretch
+}
+
+.wp-block-query.jln-omslagen>ul>li {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end
+}
+  
+.wp-block-query.jln-omslagen .wp-block-post-featured-image {
+    margin-top: auto
+}
+
+.wp-block-query.jln-omslagen .wp-block-post-featured-image img {
+    display: block;
+    width: 100%;
+    height: auto
+}
+
+.wp-block-tag-cloud {
+  text-align:center;
+}
+
+.wp-block-tag-cloud a {
+  display: inline-block;
+  color: var(--jln--accent);
+  text-decoration: none;
 }

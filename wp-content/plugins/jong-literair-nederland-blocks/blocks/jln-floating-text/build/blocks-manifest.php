@@ -56,7 +56,7 @@ return array(
 		'supports' => array(
 			'html' => false
 		),
-		'textdomain' => 'jong-literair-nederland-blocks',
+		'textdomain' => 'jjln-blocks',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css',
