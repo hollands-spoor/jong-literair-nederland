@@ -1,5 +1,66 @@
 /* Editor-only styles for Jong Literair Nederland */
 
+/* CSS custom properties — needed inside the editor iframe */
+:root {
+  --jln--accent: #f0573a;
+  --jln--floating-image-width: 8em;
+  --jln--page-margins-horizontal: 4em;
+  --jln--page-margins-vertical: 3em;
+}
+
+.editor-styles-wrapper {
+  background-color: #ffffff;
+}
+
+/* Horizontal page margins for constrained layout inside a background-colored group */
+.editor-styles-wrapper .has-background > .has-global-padding.is-layout-constrained {
+  padding-left: var(--jln--page-margins-horizontal);
+  padding-right: var(--jln--page-margins-horizontal);
+}
+
+/* Inline floating post thumbnails (mpt list pattern) */
+.editor-styles-wrapper .mpt figure.wp-block-post-featured-image,
+.editor-styles-wrapper .mpt li figure.wp-block-post-featured-image {
+  width: var(--jln--floating-image-width);
+  margin-left: 1em;
+  float: right;
+}
+
+/* jln-omslagen query block */
+.editor-styles-wrapper .wp-block-query.jln-omslagen > ul {
+  gap: .5em;
+  align-items: stretch;
+}
+
+.editor-styles-wrapper .wp-block-query.jln-omslagen > ul > li {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.editor-styles-wrapper .wp-block-query.jln-omslagen .wp-block-post-featured-image {
+  margin-top: auto;
+}
+
+.editor-styles-wrapper .wp-block-query.jln-omslagen .wp-block-post-featured-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Tag cloud */
+.editor-styles-wrapper .wp-block-tag-cloud {
+  text-align: center;
+}
+
+.editor-styles-wrapper .wp-block-tag-cloud a {
+  display: inline-block;
+  color: var(--jln--accent);
+  text-decoration: none;
+}
+
+/* 404 page */
 .editor-styles-wrapper .error-404-container {
   position: relative;
   top: 10vw;

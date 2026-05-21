@@ -1,1 +1,22 @@
-.wp-block-jln-jln-floating-text{overflow:visible;position:relative}.jln-floating-text__svg{overflow:visible;pointer-events:none;position:absolute}.jln-floating-text__text{font-family:inherit;letter-spacing:.06em}.jln-floating-text__content{margin-top:1.5rem}
+/*!****************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./blocks/jln-floating-text/src/style.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************/
+/* Front-end + editor shared styles for the Floating Text block. */
+.wp-block-jln-jln-floating-text {
+  position: relative;
+  overflow: visible;
+}
+.jln-floating-text__svg {
+  position: absolute;
+  pointer-events: none;
+  overflow: visible;
+}
+.jln-floating-text__text {
+  font-family: inherit;
+  letter-spacing: 0.06em;
+}
+.jln-floating-text__content {
+  margin-top: 1.5rem;
+}
+
+/*# sourceMappingURL=style-index.css.map*/

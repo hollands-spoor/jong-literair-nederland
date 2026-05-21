@@ -138,4 +138,27 @@ header .wp-block-jln-jln-logo.has-logo-5 {
   font-size: 4vw;
 }
 
+/* Column on front page */
+.home .ln-titel.category-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.home .ln-titel.category-column .ln-titel__column-recensent {
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: var(--wp--preset--color--teal);
+  color: var(--wp--preset--color--white);
+  padding: 0.25rem 0.5rem;
+}
+
+.home .ln-titel.category-column .ln-titel__column-recensent .intro {
+  font-family: var(--wp--preset--font-family--barlow-condensed);
+  font-size: 1.6em;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+
 /*# sourceMappingURL=style.css.map*/

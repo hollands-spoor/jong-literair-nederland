@@ -1,1 +1,99 @@
-.wp-block-ln-ln-titel{display:flex;flex-direction:column;gap:.5rem}.ln-titel__post-meta{align-items:baseline;display:flex;flex-direction:row;justify-content:space-between}.ln-titel__chapeau{color:#666;font-size:.9em}.ln-titel__post-date{color:#666;font-size:.75em;text-align:left;white-space:nowrap}.ln-titel__post-title{margin-bottom:.5em;margin-top:0}h1.ln-titel__post-title{font-size:2.5em}.ln-titel__post-title>a{color:inherit;font:inherit;text-decoration:inherit}.ln-titel__post-title>a:focus,.ln-titel__post-title>a:hover{text-decoration:underline}.ln-titel__post-title>a:focus-visible{outline:2px solid currentColor;outline-offset:2px}.ln-titel__ln_auteur{color:#666;font-size:.9em;font-style:italic}.ln-titel__ln_auteur>a{text-decoration:none}.ln-titel__ln_auteur>a:hover{text-decoration:underline}.post-template-single-column .wp-block-ln-ln-titel,.post-template-single-column-zonder-featured-image .wp-block-ln-ln-titel{background-color:#fcc;border-bottom:1px solid var(--wp--ln--divider-color)}.post-template-single-column .ln-titel__column-with-face{align-items:flex-end;display:flex;gap:2em;justify-content:space-between}.post-template-single-column .ln-titel__column-with-face h1.ln-titel__post-title{margin-bottom:0}.post-template-single-column .columnist-face{display:flex}.post-template-single-column .columnist-face img{max-height:6em;-o-object-fit:cover;object-fit:cover;width:auto}.post-template-single-column .wp-block-ln-ln-titel.category-column .ln-titel__column-recensent{gap:1em;justify-content:flex-start;width:75%}
+/*!********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./blocks/jln-titel/src/style.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************/
+.wp-block-ln-ln-titel {
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.ln-titel__post-meta {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.ln-titel__chapeau {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.ln-titel__post-date {
+  font-size: 0.75em;
+  color: #666;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.ln-titel__post-title {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+h1.ln-titel__post-title {
+  font-size: 2.5em;
+}
+
+.ln-titel__post-title > a {
+  color: inherit;
+  text-decoration: inherit;
+  font: inherit;
+}
+
+.ln-titel__post-title > a:hover,
+.ln-titel__post-title > a:focus {
+  text-decoration: underline;
+}
+
+.ln-titel__post-title > a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+.ln-titel__ln_auteur {
+  font-size: 0.9em;
+  font-style: italic;
+  color: #666;
+}
+
+.ln-titel__ln_auteur > a {
+  text-decoration: none;
+}
+
+.ln-titel__ln_auteur > a:hover {
+  text-decoration: underline;
+}
+
+.post-template-single-column .wp-block-ln-ln-titel, .post-template-single-column-zonder-featured-image .wp-block-ln-ln-titel {
+  border-bottom: 1px solid var(--wp--ln--divider-color);
+  background-color: #fcc;
+}
+
+.post-template-single-column .ln-titel__column-with-face {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+.post-template-single-column .ln-titel__column-with-face h1.ln-titel__post-title {
+  margin-bottom: 0;
+}
+
+.post-template-single-column .columnist-face {
+  display: flex;
+}
+
+.post-template-single-column .columnist-face img {
+  max-height: 6em;
+  width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.post-template-single-column .wp-block-ln-ln-titel.category-column .ln-titel__column-recensent {
+  justify-content: flex-start;
+  gap: 1em;
+  width: 75%;
+}
