@@ -77,3 +77,21 @@ function jln_override_new_post_presets( array $presets ): array {
 }
 add_filter( 'xln_new_post_presets', 'jln_override_new_post_presets' );
 
+
+/** For pagination in archives previous / next buttons justified with space between, see
+ * https://hollands-spoor.com/fixing-pagination/
+ */
+
+add_filter('render_block_core/query-pagination-previous', function(  $block_content, $parsed_block, $block_object ) {
+    if( '' === $block_content) {
+        $block_content = '<span class="wp-block-query-pagination-previous" style="margin-inline-end: auto;"></span>';
+    }
+    return $block_content;
+}, 10, 3 );
+
+add_filter('render_block_core/query-pagination-next', function(  $block_content, $parsed_block, $block_object ) {
+    if( '' === $block_content) {
+        $block_content = '<span class="wp-block-query-pagination-next" style="margin-inline-start: auto;"></span>';
+    }
+    return $block_content;
+}, 10, 3 );

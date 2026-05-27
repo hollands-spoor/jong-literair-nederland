@@ -1,0 +1,1 @@
+{"version":3,"file":"view.js","mappings":";;;;AAAA;AACAA,OAAO,CAACC,GAAG,CAAC,yCAAyC,CAAC;AACtD,8B","sources":["webpack://jong-ln-blocks/./blocks/jln-floating-text/src/view.js"],"sourcesContent":["/* eslint-disable no-console */\r\nconsole.log(\"Hello from the JLN Floating Text block!\");\r\n/* eslint-enable no-console */\r\n"],"names":["console","log"],"sourceRoot":""}

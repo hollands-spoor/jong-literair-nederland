@@ -1,0 +1,1 @@
+{"version":3,"file":"index.css","mappings":";;;AAAA;EACC;EACA;AACD,C","sources":["webpack://jong-ln-blocks/./blocks/jln-titel/src/editor.scss"],"sourcesContent":[".wp-block-ln-ln-titel {\r\n\tborder: 1px dotted #999;\r\n\tpadding: 0.75rem;\r\n}"],"names":[],"sourceRoot":""}

@@ -1,0 +1,1 @@
+{"version":3,"file":"index.css","mappings":";;;AAAA;EACC;AACD,C","sources":["webpack://jong-ln-blocks/./blocks/jln-current-year/src/editor.scss"],"sourcesContent":[".wp-block-ln-ln-current-year {\r\n\tdisplay: inline;\r\n}\r\n"],"names":[],"sourceRoot":""}

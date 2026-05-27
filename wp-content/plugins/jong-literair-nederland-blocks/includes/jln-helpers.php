@@ -10,7 +10,7 @@ if( ! function_exists( 'get_door_regel' ) ) {
         $door_intro = get_post_meta( $post_id, 'door_intro', true );
         $intro = '';
         $medewerker = '';
-        if ( 'recensies' === $category ) {
+        if ( in_array( $category, array( 'recensies', 'recensie' ), true ) ) {
             $intro = 'Recensie door:';
             if ( $auteur_recensenie_id && $auteur_recensenie_id != '' && $auteur_recensenie_id != 0 && $auteur_recensenie_id != 'null' ) {
                 $medewerker = get_the_title( $auteur_recensenie_id );
@@ -23,7 +23,7 @@ if( ! function_exists( 'get_door_regel' ) ) {
             } else {
                 return '';
             }
-        } elseif ( 'oogst' === $category ) {
+        } elseif ( in_array( $category, array( 'oogst', 'jonge-oogst' ), true ) ) {
             $intro = 'Door:';
             if( $door_intro) {
                 // $intro = $door_intro; No more door intro's for oogst, as per request of redactie.
@@ -178,7 +178,7 @@ if( !function_exists( 'get_besproken_boeken')) {
 if( ! function_exists( 'get_chapeau' ) ) {
 
     function get_chapeau( $post_id, $category ) {
-        if ( 'jonge-oogst' == $category ){
+        if ( in_array( (string) $category, array( 'jonge-oogst', 'oogst' ), true ) ) {
             $option_suffix = is_single() ? 'single' : 'archive';
             $weergave = get_option('xln_options')["oogst-titel-{$option_suffix}"] ?? 'none';
             

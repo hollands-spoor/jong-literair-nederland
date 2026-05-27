@@ -1,6 +1,7 @@
 import { __ } from '@wordpress/i18n';
 import { InspectorControls, useBlockProps } from '@wordpress/block-editor';
 import { useSelect } from '@wordpress/data';
+import { decodeEntities } from '@wordpress/html-entities';
 import { PanelBody, SelectControl, ToggleControl } from '@wordpress/components';
 import './editor.scss';
 
@@ -36,7 +37,7 @@ export default function Edit( { attributes, setAttributes, context = {} } ) {
 
 			if ( entity ) {
 				if ( typeof entity?.title?.rendered === 'string' ) {
-					sourceTitle = entity.title.rendered.replace( /<[^>]+>/g, '' ).trim();
+					sourceTitle = decodeEntities( entity.title.rendered.replace( /<[^>]+>/g, '' ).trim() );
 				} else if ( typeof entity?.title?.raw === 'string' ) {
 					sourceTitle = entity.title.raw;
 				} else if ( typeof entity?.title === 'string' ) {

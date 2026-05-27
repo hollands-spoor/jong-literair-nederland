@@ -138,4 +138,59 @@ header .wp-block-jln-jln-logo.has-logo-5 {
   font-size: 4vw;
 }
 
+/* Column on front page */
+.home .ln-titel.category-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.home .ln-titel.category-column .ln-titel__column-recensent {
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: var(--wp--preset--color--teal);
+  color: var(--wp--preset--color--white);
+  padding: 0.25rem 0.5rem;
+}
+
+.home .ln-titel.category-column .ln-titel__column-recensent .intro {
+  font-family: var(--wp--preset--font-family--barlow-condensed);
+  font-size: 1.6em;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+
+/* Pagination */
+.wp-block-query-pagination-numbers > span,
+.wp-block-query-pagination-numbers > a,
+.wp-block-query-pagination > a.wp-block-query-pagination-next > span,
+.wp-block-query-pagination > a.wp-block-query-pagination-previous > span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--wp--preset--color--teal);
+  color: var(--wp--preset--color--white);
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  border: 2px solid var(--wp--preset--color--white);
+  transition: color 0.3s, background-color 0.3s, border-color 0.3s;
+  line-height: 1;
+  font-family: var(--wp--preset--font-family--barlow-condensed);
+}
+
+.wp-block-query-pagination-numbers > a {
+  text-decoration: none;
+}
+
+.wp-block-query-pagination-numbers > span.page-numbers.current,
+.wp-block-query-pagination-numbers > a:hover,
+.wp-block-query-pagination > a.wp-block-query-pagination-next:hover > span,
+.wp-block-query-pagination > a.wp-block-query-pagination-previous:hover > span {
+  color: var(--wp--preset--color--teal);
+  background-color: var(--wp--preset--color--white);
+  border: 2px solid var(--wp--preset--color--teal);
+}
+
 /*# sourceMappingURL=style.css.map*/
