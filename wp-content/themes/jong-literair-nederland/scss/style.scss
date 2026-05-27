@@ -202,3 +202,11 @@ header .wp-block-jln-jln-logo.has-logo-5 {
   background-color: var(--wp--preset--color--white);
   border: 2px solid var(--wp--preset--color--teal);
 }
+
+
+// legacy styling for old recensie / oogst content::after
+
+.ln-bibliographics__cover {
+  max-width: 100%;  
+  height: auto;
+}

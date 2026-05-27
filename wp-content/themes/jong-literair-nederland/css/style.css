@@ -193,4 +193,9 @@ header .wp-block-jln-jln-logo.has-logo-5 {
   border: 2px solid var(--wp--preset--color--teal);
 }
 
+.ln-bibliographics__cover {
+  max-width: 100%;
+  height: auto;
+}
+
 /*# sourceMappingURL=style.css.map*/
