@@ -48,7 +48,7 @@ if ( ! $has_bibliographics ) {
 	return;
 }
 ?>
-<div class="wp-block-ln-ln-bibliographics ln-legacy-bibliographics ln-legacy-bibliographics--recensie">
+<div class="wp-block-ln-ln-bibliographics ln-legacy-bibliographics ln-legacy-bibliographics--interview">
 	<?php if ( $omslag_id ) : ?>
 		<?php
 		echo wp_get_attachment_image(
