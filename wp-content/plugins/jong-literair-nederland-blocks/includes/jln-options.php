@@ -82,49 +82,11 @@ add_filter( 'xln_options_schema', function( $schema ) {
         ],
     ];
 
-    $schema['fotosynthese'] = [
-        'label' => __( 'Fotosynthese', 'jln-blocks' ),
-        'sections' => [
-            'fotosynthese_section' => [
-                'label' => __( 'Fotosynthese', 'jln-blocks' ),
-                'fields' => [
-                    'fotosynthese_enabled' => [
-                        'type' => 'checkbox',
-                        'label' => __( 'Enable Fotosynthese', 'jln-blocks' ),
-                        'default' => false,
-                    ],
-                    'fotosynthese_bg_color' => [
-                        'type' => 'text',
-                        'label' => __( 'Background color', 'jln-blocks' ),
-                        'default' => '#cccccc',
-                        'maxlength' => 20,
-                        'dependency' => [
-                            'option' => 'fotosynthese_enabled',
-                            'value' => false,
-                        ],
-                    ],
-                ],
-            ],
-        ],
-    ];
-
-    $schema['anniversary'] = [
-        'label' => __( 'Anniversary', 'jln-blocks' ),
-        'sections' => [
-            'anniversary_section' => [
-                'label' => __( 'Anniversary', 'jln-blocks' ),
-                'description' => __( 'Comma-separated year priorities, for example: 10,5,25,20,15', 'jln-blocks' ),
-                'fields' => [
-                    'year-preference' => [
-                        'type' => 'text',
-                        'label' => __( 'Year preference', 'jln-blocks' ),
-                        'default' => '25,20,15,10,5',
-                        'maxlength' => 100,
-                    ],
-                ],
-            ],
-        ],
-    ];
+    $schema['developers']['sections']['developer_tools']['fields']['enable_jln_tools_page'] = [
+			'label'   => __( 'Enable JLN tools page', 'jong-literair-nederland-blocks' ),
+			'type'    => 'checkbox',
+			'default' => true,
+	];
 
     return $schema;
 } );

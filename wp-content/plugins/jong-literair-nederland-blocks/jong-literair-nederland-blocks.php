@@ -18,6 +18,33 @@ if ( ! defined( 'ABSPATH' ) ) {
 require_once __DIR__ . '/includes/jln-helpers.php';
 require_once __DIR__ . '/includes/jln-options.php';
 
+require_once __DIR__ . '/includes/jln-tools.php';
+// TODO: require_once __DIR__ . '/includes/jln-cron.php';
+
+
+/**
+ * Returns whether the developer tools page is enabled.
+ *
+ * @return bool
+ */
+function jln_is_tools_page_enabled(): bool {
+	$options = get_option( 'xln_options', [] );
+
+	if ( ! is_array( $options ) ) {
+		return true;
+	}
+
+	if ( ! array_key_exists( 'enable_jln_tools_page', $options ) ) {
+		return true;
+	}
+
+	return ! empty( $options['enable_jln_tools_page'] );
+}
+
+if ( jln_is_tools_page_enabled() ) {
+    new Jln_Tools();
+}
+
 
 $jong_ln_blocks = array( 'blocks/jln-floating-text', 'blocks/jln-current-year', 'blocks/jln-logo', 'blocks/jln-titel' );
 

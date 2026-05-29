@@ -217,6 +217,12 @@ header .wp-block-jln-jln-logo.has-logo-5 {
   top: 0px;
 }
 
+.wp-block-columns.ln-legacy-interview-columns.is-layout-flex,
+.wp-block-columns.ln-legacy-oogst-columns.is-layout-flex,
+.wp-block-columns.ln-legacy-recensie-columns.is-layout-flex {
+  gap: 3em;
+}
+
 .wp-block-ln-ln-bibliographics h2.ln-boektitel {
   font-size: 1.25em;
   margin-bottom: 0;
