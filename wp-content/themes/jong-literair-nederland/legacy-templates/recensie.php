@@ -49,7 +49,10 @@ $has_bibliographics = (bool) array_filter(
 	)
 );
 
-if ( ! $has_bibliographics ) {
+$prevent_legacy       = ln_get_legacy_bibliographics_meta( $post_id, 'prevent_legacy' );
+
+
+if ( ! $has_bibliographics || 'yes' === $prevent_legacy ) {
 	return;
 }
 ?>
