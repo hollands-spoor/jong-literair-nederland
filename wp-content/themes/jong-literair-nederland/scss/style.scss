@@ -204,6 +204,29 @@ header .wp-block-jln-jln-logo.has-logo-5 {
 }
 
 
+/** search widget in header */
+
+.wpfts_search_widget.main-search form.search-form{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 1em;
+}
+
+.wpfts_search_widget.main-search form.search-form input.search-field {
+  flex: 1;
+  padding: 0.5em;
+  border: 2px solid var(--wp--preset--color--teal);
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.wpfts_search_widget.main-search .search-submit {
+  fill: var(--wp--preset--color--white);
+
+}
+
+
 // legacy styling for old recensie / oogst content::after
 
 .ln-bibliographics__cover {

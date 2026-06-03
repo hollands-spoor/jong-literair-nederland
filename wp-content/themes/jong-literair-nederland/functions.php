@@ -55,6 +55,8 @@ function jln_theme_setup_editor_styles() {
  *
  * Keep LN defaults for template and block behavior and only change
  * category slugs for JLN taxonomy naming.
+ * 
+ * TODO: this is not a theme thing, move it to a plugin, jong-literair-nederland-overwrites.php o.i.d.
  *
  * @param array<string, array<string, string>> $presets Quick-start presets.
  *
@@ -76,6 +78,30 @@ function jln_override_new_post_presets( array $presets ): array {
 	return $presets;
 }
 add_filter( 'xln_new_post_presets', 'jln_override_new_post_presets' );
+
+
+add_filter('wpfts_widget_html', function( $out, $preset, $preset_id ) {
+
+    // Dirty filtering of html. WPFTS (plugin slug="fulltext-search" ) doesn't provide any hooks to change the markup of the search widget, so we have to do it ourselves.
+    // if html in $out contains class "main-search" then replace <input type="submit" class="search-submit" value=""> with
+    // an input type="image" with src in stylesheetdir/assets/icons/search.svg
+
+    if ( false === strpos( $out, 'main-search' ) ) {
+        return $out;
+    }
+
+    $search_icon_url = get_stylesheet_directory_uri() . '/assets/icons/search.svg';
+    $replacement     = '<input type="image" class="search-submit" src="' . esc_url( $search_icon_url ) . '" alt="Zoeken">';
+
+    $out = preg_replace(
+        '/<input\b(?=[^>]*\btype=(["\'])submit\1)(?=[^>]*\bclass=(["\'])[^"\']*\bsearch-submit\b[^"\']*\2)[^>]*>/i',
+        $replacement,
+        $out,
+        1
+    );
+
+    return $out;
+}, 10, 3);
 
 
 /** For pagination in archives previous / next buttons justified with space between, see

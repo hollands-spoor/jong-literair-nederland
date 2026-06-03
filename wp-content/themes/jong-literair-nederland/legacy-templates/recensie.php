@@ -7,20 +7,24 @@ if ( ! isset( $post ) || ! $post instanceof WP_Post ) {
 $post_id = $post->ID;
 
 $boektitel             = ln_get_legacy_bibliographics_meta( $post_id, 'boektitel' );
-$auteur                = ln_get_legacy_bibliographics_meta( $post_id, 'auteur_boek' );
-$auteur_url            = ln_get_legacy_bibliographics_meta( $post_id, 'auteur_boek_url' );
-$uitgever              = ln_get_legacy_bibliographics_meta( $post_id, 'uitgever' );
-$uitgever_url          = ln_get_legacy_bibliographics_meta( $post_id, 'uitgever_url' );
+$auteur                = ln_get_legacy_bibliographics_meta( $post_id, 'boekauteur' );
+$auteur_url            = ln_get_legacy_bibliographics_meta( $post_id, 'website_auteur' );
+$uitgever              = ln_get_legacy_bibliographics_meta( $post_id, 'uitgeverij' );
+// $uitgever_url          = ln_get_legacy_bibliographics_meta( $post_id, 'uitgever_url' );
 $isbn                  = ln_get_legacy_bibliographics_meta( $post_id, 'isbn' );
 $vrije_regel           = ln_get_legacy_bibliographics_meta( $post_id, 'vrije_regel' );
 $vertaling_door        = ln_get_legacy_bibliographics_meta( $post_id, 'vertaling_door' );
-$oorspronkelijke_titel = ln_get_legacy_bibliographics_meta( $post_id, 'oorspronkelijke_titel' );
-$nawoord_door          = ln_get_legacy_bibliographics_meta( $post_id, 'nawoord_door' );
-$illustraties_door     = ln_get_legacy_bibliographics_meta( $post_id, 'illustraties_door' );
+//$oorspronkelijke_titel = ln_get_legacy_bibliographics_meta( $post_id, 'oorspronkelijke_titel' );
+//$nawoord_door          = ln_get_legacy_bibliographics_meta( $post_id, 'nawoord_door' );
+$voorwoord_door          = ln_get_legacy_bibliographics_meta( $post_id, 'voorwoord' );
+$illustraties_door     = ln_get_legacy_bibliographics_meta( $post_id, 'illustrator' );
+$website_illustrator    = ln_get_legacy_bibliographics_meta( $post_id, 'website_illustrator' );
+
 $aantal_paginas        = ln_get_legacy_bibliographics_meta( $post_id, 'aantal_paginas' );
 $formatted_price       = ln_format_legacy_bibliographics_price( ln_get_legacy_bibliographics_meta( $post_id, 'prijs' ) );
 $omslag_id             = absint( ln_get_legacy_bibliographics_meta( $post_id, 'omslag_id' ) );
 $omslag_foto           = ln_get_legacy_bibliographics_meta( $post_id, 'omslag_foto' );
+$verschijningsdatum       = ln_get_legacy_bibliographics_meta( $post_id, 'verschenen' );
 
 if ( ! $omslag_id ) {
 	$omslag_id = get_post_thumbnail_id( $post_id );
@@ -34,8 +38,9 @@ $has_bibliographics = (bool) array_filter(
 		$isbn,
 		$vrije_regel,
 		$vertaling_door,
-		$oorspronkelijke_titel,
-		$nawoord_door,
+		//$oorspronkelijke_titel,
+		//$nawoord_door,
+		$voorwoord_door,
 		$illustraties_door,
 		$aantal_paginas,
 		$formatted_price,
@@ -59,6 +64,7 @@ if ( ! $has_bibliographics ) {
 				'class'   => 'ln-bibliographics__cover',
 				'alt'     => $boektitel ? wp_strip_all_tags( $boektitel ) : '',
 				'loading' => 'lazy',
+				'style'   => 'max-width:100%;height:auto;'
 			)
 		);
 		?>
@@ -67,7 +73,8 @@ if ( ! $has_bibliographics ) {
 			class="ln-bibliographics__cover"
 			src="<?php echo esc_url( $omslag_foto ); ?>"
 			alt="<?php echo esc_attr( $boektitel ? wp_strip_all_tags( $boektitel ) : '' ); ?>"
-			loading="lazy"
+			loading="lazy",
+			style="max-width:100%;height:auto;"
 		
 		>
 	<?php endif; ?>
@@ -109,11 +116,13 @@ if ( ! $has_bibliographics ) {
 	<?php if ( $uitgever ) : ?>
 		<p>
 			<?php echo esc_html__( 'Uitgever:', 'literair-nederland-25' ) . ' '; ?>
-			<?php if ( $uitgever_url ) : ?>
+			<?php /* if ( $uitgever_url ) : ?>
 				<a href="<?php echo esc_url( $uitgever_url ); ?>" target="_blank" rel="noopener"><?php echo esc_html( $uitgever ); ?></a>
 			<?php else : ?>
 				<?php echo esc_html( $uitgever ); ?>
-			<?php endif; ?>
+			<?php endif; */ ?>
+			<?php echo esc_html( $uitgever ); ?>
+
 		</p>
 	<?php endif; ?>
 
