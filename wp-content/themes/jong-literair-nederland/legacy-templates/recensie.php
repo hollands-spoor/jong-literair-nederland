@@ -14,8 +14,8 @@ $uitgever              = ln_get_legacy_bibliographics_meta( $post_id, 'uitgeveri
 $isbn                  = ln_get_legacy_bibliographics_meta( $post_id, 'isbn' );
 $vrije_regel           = ln_get_legacy_bibliographics_meta( $post_id, 'vrije_regel' );
 $vertaling_door        = ln_get_legacy_bibliographics_meta( $post_id, 'vertaling_door' );
-//$oorspronkelijke_titel = ln_get_legacy_bibliographics_meta( $post_id, 'oorspronkelijke_titel' );
-//$nawoord_door          = ln_get_legacy_bibliographics_meta( $post_id, 'nawoord_door' );
+$oorspronkelijke_titel = ln_get_legacy_bibliographics_meta( $post_id, 'oorspronkelijke_titel' );
+$nawoord_door          = ln_get_legacy_bibliographics_meta( $post_id, 'nawoord_door' );
 $voorwoord_door          = ln_get_legacy_bibliographics_meta( $post_id, 'voorwoord' );
 $illustraties_door     = ln_get_legacy_bibliographics_meta( $post_id, 'illustrator' );
 $website_illustrator    = ln_get_legacy_bibliographics_meta( $post_id, 'website_illustrator' );
@@ -38,8 +38,8 @@ $has_bibliographics = (bool) array_filter(
 		$isbn,
 		$vrije_regel,
 		$vertaling_door,
-		//$oorspronkelijke_titel,
-		//$nawoord_door,
+		$oorspronkelijke_titel,
+		$nawoord_door,
 		$voorwoord_door,
 		$illustraties_door,
 		$aantal_paginas,

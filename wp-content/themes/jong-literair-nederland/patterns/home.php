@@ -17,7 +17,7 @@
 
 <!-- wp:post-featured-image /-->
 
-<!-- wp:post-excerpt {"moreText":"<?php esc_attr_e('Lees verder', 'jong-literair-nederland');?>"} /-->
+<!-- wp:post-excerpt {"moreText":"<?php esc_attr_e('Read more', 'jong-literair-nederland');?>"} /-->
 <!-- /wp:post-template --></div>
 <!-- /wp:query --></div>
 <!-- /wp:column -->
@@ -27,7 +27,7 @@
 <div class="wp-block-query"><!-- wp:post-template {"layout":{"type":"grid","columnCount":1}} -->
 <!-- wp:jln/jln-titel {"titleLevel":"h2","showDate":false,"showBoekInfo":false} /-->
 
-<!-- wp:post-excerpt {"moreText":"<?php esc_attr_e('Lees verder<br>', 'jong-literair-nederland');?>","excerptLength":100} /-->
+<!-- wp:post-excerpt {"moreText":"<?php esc_attr_e('Read more', 'jong-literair-nederland');?>","excerptLength":100} /-->
 
 <!-- wp:post-featured-image /-->
 <!-- /wp:post-template --></div>
@@ -42,7 +42,7 @@
 <div class="wp-block-column" style="flex-basis:75%"><!-- wp:query {"queryId":3,"query":{"postType":"post","perPage":10,"pages":1,"order":"desc","orderBy":"date","queryType":"","offset":0,"exclude":[],"inherit":false},"namespace":"ln-query"} -->
 <div class="wp-block-query"><!-- wp:group {"metadata":{"categories":[],"patternName":"core/block/12102","name":"JLN Heading"},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"typography":{"textTransform":"uppercase","lineHeight":"1","letterSpacing":"2px"},"spacing":{"margin":{"right":"1rem","left":"1rem"},"padding":{"top":"0.5rem","bottom":"0.5rem","left":"1rem","right":"1rem"}}},"backgroundColor":"teal","textColor":"white"} -->
-<h3 class="wp-block-heading has-white-color has-teal-background-color has-text-color has-background has-link-color" style="margin-right:1rem;margin-left:1rem;padding-top:0.5rem;padding-right:1rem;padding-bottom:0.5rem;padding-left:1rem;letter-spacing:2px;line-height:1;text-transform:uppercase"><?php esc_html_e('Meer Berichten', 'jong-literair-nederland');?></h3>
+<h3 class="wp-block-heading has-white-color has-teal-background-color has-text-color has-background has-link-color" style="margin-right:1rem;margin-left:1rem;padding-top:0.5rem;padding-right:1rem;padding-bottom:0.5rem;padding-left:1rem;letter-spacing:2px;line-height:1;text-transform:uppercase"><?php esc_html_e('More Posts', 'jong-literair-nederland');?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:group -->
 
@@ -74,7 +74,7 @@
 <div class="wp-block-column" style="flex-basis:25%"><!-- wp:query {"queryId":16,"query":{"postType":"post","perPage":48,"pages":1,"order":"desc","orderBy":"date","queryType":"","offset":0,"exclude":[],"inherit":false,"taxQuery":{"include":{"category":[33,62,32]}}},"namespace":"ln-query","className":"jln-omslagen"} -->
 <div class="wp-block-query jln-omslagen"><!-- wp:group {"metadata":{"categories":[],"patternName":"core/block/12102","name":"JLN Heading"},"style":{"spacing":{"margin":{"bottom":"2em"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group" style="margin-bottom:2em"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"typography":{"textTransform":"uppercase","lineHeight":"1","letterSpacing":"2px"},"spacing":{"margin":{"right":"1rem","left":"1rem"},"padding":{"top":"0.5rem","bottom":"0.5rem","left":"1rem","right":"1rem"}}},"backgroundColor":"teal","textColor":"white"} -->
-<h3 class="wp-block-heading has-white-color has-teal-background-color has-text-color has-background has-link-color" style="margin-right:1rem;margin-left:1rem;padding-top:0.5rem;padding-right:1rem;padding-bottom:0.5rem;padding-left:1rem;letter-spacing:2px;line-height:1;text-transform:uppercase"><?php esc_html_e('Omslagen', 'jong-literair-nederland');?></h3>
+<h3 class="wp-block-heading has-white-color has-teal-background-color has-text-color has-background has-link-color" style="margin-right:1rem;margin-left:1rem;padding-top:0.5rem;padding-right:1rem;padding-bottom:0.5rem;padding-left:1rem;letter-spacing:2px;line-height:1;text-transform:uppercase"><?php esc_html_e('Covers', 'jong-literair-nederland');?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:group -->
 
@@ -89,7 +89,7 @@
 <!-- wp:group {"align":"wide","style":{"spacing":{"margin":{"top":"0em"}}},"backgroundColor":"white","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignwide has-white-background-color has-background" style="margin-top:0em"><!-- wp:group {"metadata":{"categories":[],"patternName":"core/block/12102","name":"JLN Heading"},"align":"wide","style":{"spacing":{"padding":{"top":"0px","bottom":"0px","left":"0px","right":"0px"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignwide" style="padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px"><!-- wp:heading {"level":3,"align":"wide","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"typography":{"textTransform":"uppercase","lineHeight":"1","letterSpacing":"2px"},"spacing":{"margin":{"right":"1rem","left":"1rem"},"padding":{"top":"0.5rem","bottom":"0.5rem","left":"1rem","right":"1rem"}}},"backgroundColor":"teal","textColor":"white"} -->
-<h3 class="wp-block-heading alignwide has-white-color has-teal-background-color has-text-color has-background has-link-color" style="margin-right:1rem;margin-left:1rem;padding-top:0.5rem;padding-right:1rem;padding-bottom:0.5rem;padding-left:1rem;letter-spacing:2px;line-height:1;text-transform:uppercase"><?php esc_html_e('Veelgebruikte Tags', 'jong-literair-nederland');?></h3>
+<h3 class="wp-block-heading alignwide has-white-color has-teal-background-color has-text-color has-background has-link-color" style="margin-right:1rem;margin-left:1rem;padding-top:0.5rem;padding-right:1rem;padding-bottom:0.5rem;padding-left:1rem;letter-spacing:2px;line-height:1;text-transform:uppercase"><?php esc_html_e('Frequently used Tags', 'jong-literair-nederland');?></h3>
 <!-- /wp:heading -->
 
 <!-- wp:tag-cloud {"numberOfTags":100,"smallestFontSize":"0.75em","largestFontSize":"2em","align":"wide","className":"is-style-default"} /--></div>

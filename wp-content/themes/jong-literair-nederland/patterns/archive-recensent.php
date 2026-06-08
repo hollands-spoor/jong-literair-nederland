@@ -10,7 +10,7 @@
 <!-- wp:group {"tagName":"main","backgroundColor":"jln-orange","layout":{"type":"constrained"}} -->
 <main class="wp-block-group has-jln-orange-background-color has-background"><!-- wp:group {"align":"wide","backgroundColor":"white","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignwide has-white-background-color has-background"><!-- wp:heading {"level":1,"align":"wide"} -->
-<h1 class="wp-block-heading alignwide"><?php esc_html_e('Recensenten en Columnisten', 'jong-literair-nederland');?></h1>
+<h1 class="wp-block-heading alignwide"><?php esc_html_e('Reviewers and Columnists', 'jong-literair-nederland');?></h1>
 <!-- /wp:heading -->
 
 <!-- wp:query {"queryId":15,"query":{"perPage":100,"pages":0,"offset":0,"postType":"recensent","order":"asc","orderBy":"title","author":"","search":"","exclude":[],"sticky":"","inherit":false,"taxQuery":null,"parents":[],"format":[]},"align":"wide"} -->
@@ -19,7 +19,7 @@
 
 <!-- wp:post-featured-image /-->
 
-<!-- wp:post-excerpt {"moreText":"<?php esc_attr_e('Lees verder', 'jong-literair-nederland');?>","excerptLength":100} /-->
+<!-- wp:post-excerpt {"moreText":"<?php esc_attr_e('Read more', 'jong-literair-nederland');?>","excerptLength":100} /-->
 <!-- /wp:post-template -->
 
 <!-- wp:query-pagination {"align":"center","layout":{"type":"flex","justifyContent":"space-between"}} -->
@@ -31,7 +31,7 @@
 <!-- /wp:query-pagination -->
 
 <!-- wp:query-no-results -->
-<!-- wp:paragraph {"placeholder":"Tekst of blokken toevoegen die worden getoond wanneer de query geen resultaten oplevert."} -->
+<!-- wp:paragraph {"placeholder":"Insert text or blocks to display when the query returns no results."} -->
 <p></p>
 <!-- /wp:paragraph -->
 <!-- /wp:query-no-results --></div>

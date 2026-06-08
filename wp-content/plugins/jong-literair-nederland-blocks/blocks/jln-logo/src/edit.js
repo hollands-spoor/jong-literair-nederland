@@ -98,7 +98,8 @@ export default function Edit({ attributes, setAttributes }) {
 							{ label: __( 'JLN', 'jln-blocks' ), value: '2' },
 							{ label: __( 'JONG', 'jln-blocks' ), value: '3' },
 							{ label: __( 'Steun Ons', 'jln-blocks' ), value: '4' },
-							{ label: __( 'JLN Header', 'jln-blocks' ), value: '5' }
+							{ label: __( 'JLN Header', 'jln-blocks' ), value: '5' },
+							{ label: __( 'Steun JLN', 'jln-blocks' ), value: '6' }
 
 						] }
 						onChange={ ( value ) => setAttributes( { logo_choice: Number.parseInt( value, 10 ) || 0 } ) }

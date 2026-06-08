@@ -10,14 +10,14 @@
 <!-- wp:group {"tagName":"main","style":{"spacing":{"margin":{"top":"0rem"}}},"backgroundColor":"jln-orange","layout":{"type":"constrained"}} -->
 <main class="wp-block-group has-jln-orange-background-color has-background" style="margin-top:0rem"><!-- wp:group {"align":"wide","style":{"dimensions":{"minHeight":"60vh"}},"backgroundColor":"white","layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide has-white-background-color has-background" style="min-height:60vh"><!-- wp:heading {"level":1} -->
-<h1 class="wp-block-heading"><?php esc_html_e('Niet gevonden', 'jong-literair-nederland');?></h1>
+<h1 class="wp-block-heading"><?php esc_html_e('Not Found', 'jong-literair-nederland');?></h1>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e('Bij dit adres is geen pagina of bericht gevonden. Misschien kan de zoekfunctie helpen?', 'jong-literair-nederland');?></p>
+<p><?php esc_html_e('No post or page found. Try a search?', 'jong-literair-nederland');?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:search {"label":"<?php esc_attr_e('Zoeken', 'jong-literair-nederland');?>","buttonText":"<?php esc_attr_e('Zoeken', 'jong-literair-nederland');?>"} /-->
+<!-- wp:search {"label":"<?php esc_attr_e('Search', 'jong-literair-nederland');?>","buttonText":"<?php esc_attr_e('Search', 'jong-literair-nederland');?>"} /-->
 
 <!-- wp:group {"className":"error-404-container","layout":{"type":"constrained"}} -->
 <div class="wp-block-group error-404-container"><!-- wp:group {"className":"error-404-splash","layout":{"type":"constrained"}} -->

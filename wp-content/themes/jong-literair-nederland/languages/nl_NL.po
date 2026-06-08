@@ -1,0 +1,200 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Jong Literair Nederland 0.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/jong-literair-nederland\n"
+"POT-Creation-Date: 2026-06-04T14:55:55+02:00\n"
+"PO-Revision-Date: 2026-06-04 15:21+0200\n"
+"Last-Translator: Team Literair Nederland\n"
+"Language-Team: Dutch\n"
+"Language: nl_NL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+"X-Domain: jong-literair-nederland\n"
+
+#. Theme Name of the theme
+#: style.css
+msgid "Jong Literair Nederland"
+msgstr "Jong Literair Nederland"
+
+#. Theme URI of the theme
+#: style.css
+msgid "https://literairnederland.nl/"
+msgstr "https://literairnederland.nl/"
+
+#. Author of the theme
+#: style.css
+msgid "Hollands Spoor"
+msgstr "Hollands Spoor"
+
+#: patterns/404.php
+msgctxt "Pattern title"
+msgid "404"
+msgstr "404"
+
+#: patterns/404.php:31
+msgid "404"
+msgstr "404"
+
+#: patterns/archive-recensent.php
+msgctxt "Pattern title"
+msgid "archive-recensent"
+msgstr "archive-recensent"
+
+#: patterns/archive.php
+msgctxt "Pattern title"
+msgid "archive"
+msgstr "archive"
+
+#: patterns/archive.php:40 patterns/index.php:22 patterns/page-no-title.php:20
+#: patterns/page.php:22 patterns/recensie.php:22 patterns/single-column.php:38
+#: patterns/single-interview.php:22 patterns/single-recensent.php:22
+#: patterns/single.php:22
+msgid "Recent"
+msgstr "Recent"
+
+#: patterns/home.php
+msgctxt "Pattern title"
+msgid "home"
+msgstr "home"
+
+#: patterns/index.php
+msgctxt "Pattern title"
+msgid "index"
+msgstr "index"
+
+#: patterns/jln-heading.php
+msgctxt "Pattern title"
+msgid "JLN Heading"
+msgstr "JLN Heading"
+
+#: patterns/jln-heading.php:10
+msgid "Column"
+msgstr "Column"
+
+#: patterns/page-no-title.php
+msgctxt "Pattern title"
+msgid "page-no-title"
+msgstr "page-no-title"
+
+#: patterns/page.php
+msgctxt "Pattern title"
+msgid "page"
+msgstr "page"
+
+#: patterns/recensie.php
+msgctxt "Pattern title"
+msgid "recensie"
+msgstr "recensie"
+
+#: patterns/single-column.php
+msgctxt "Pattern title"
+msgid "single-column"
+msgstr "single-column"
+
+#: patterns/single-interview.php
+msgctxt "Pattern title"
+msgid "single-interview"
+msgstr "single-interview"
+
+#: patterns/single-oogst.php
+msgctxt "Pattern title"
+msgid "single-oogst"
+msgstr "single-oogst"
+
+#: patterns/single-recensent.php
+msgctxt "Pattern title"
+msgid "single-recensent"
+msgstr "single-recensent"
+
+#: patterns/single.php
+msgctxt "Pattern title"
+msgid "single"
+msgstr "single"
+
+#: patterns/test.php
+msgctxt "Pattern title"
+msgid "test"
+msgstr "test"
+
+#: theme.json
+msgctxt "Color name"
+msgid "White"
+msgstr "Wit"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Black"
+msgstr "Zwart"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Darkgrey"
+msgstr "Donkergrijs"
+
+#: theme.json
+msgctxt "Color name"
+msgid "JLN Teal"
+msgstr "JLN Teal"
+
+#: theme.json
+msgctxt "Color name"
+msgid "JLN Orange"
+msgstr "JLN Oranje"
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Barlow Condensed"
+msgstr "Barlow Condensed"
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Roboto Slab"
+msgstr "Roboto Slab"
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Alegreya"
+msgstr "Alegreya"
+
+#: patterns/404.php:13
+msgid "Not Found"
+msgstr "Niet gevonden"
+
+#: patterns/404.php:17
+msgid "No post or page found. Try a search?"
+msgstr "Geen bericht of pagina gevonden. Misschien helpt de zoekfunctie."
+
+#: functions.php:94 patterns/404.php:20
+msgid "Search"
+msgstr "Zoeken"
+
+#: patterns/archive-recensent.php:13
+msgid "Reviewers and Columnists"
+msgstr "Recensenten en columnisten"
+
+#: patterns/archive-recensent.php:22 patterns/home.php:20 patterns/home.php:30
+msgid "Read more"
+msgstr "Lees verder"
+
+#: patterns/home.php:45
+msgid "More Posts"
+msgstr "Meer berichten"
+
+#: patterns/home.php:77
+msgid "Covers"
+msgstr "Omslagen"
+
+#: patterns/home.php:92
+msgid "Frequently used Tags"
+msgstr "Veelgebruikte tags"
+
+#: patterns/single-oogst.php:24
+msgid "More Oogst"
+msgstr "Meer Oogst"
+
+#. Description of the theme
+#: style.css
+msgid "Jong Literair Nederland Theme."
+msgstr "Jong Literair Nederland-thema."

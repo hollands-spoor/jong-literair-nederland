@@ -91,7 +91,7 @@ add_filter('wpfts_widget_html', function( $out, $preset, $preset_id ) {
     }
 
     $search_icon_url = get_stylesheet_directory_uri() . '/assets/icons/search.svg';
-    $replacement     = '<input type="image" class="search-submit" src="' . esc_url( $search_icon_url ) . '" alt="Zoeken">';
+    $replacement     = '<input type="image" class="search-submit" src="' . esc_url( $search_icon_url ) . '" alt="' . esc_attr__( 'Search', 'jong-literair-nederland' ) . '">';
 
     $out = preg_replace(
         '/<input\b(?=[^>]*\btype=(["\'])submit\1)(?=[^>]*\bclass=(["\'])[^"\']*\bsearch-submit\b[^"\']*\2)[^>]*>/i',

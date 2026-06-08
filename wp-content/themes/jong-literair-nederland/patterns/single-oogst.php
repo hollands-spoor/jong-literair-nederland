@@ -21,7 +21,7 @@
 <div class="wp-block-column" style="flex-basis:25%"><!-- wp:query {"queryId":0,"query":{"postType":"post","perPage":10,"pages":1,"order":"desc","orderBy":"date","queryType":"","offset":0,"exclude":[],"inherit":false,"taxQuery":{"include":{"category":[62]}}},"namespace":"ln-query"} -->
 <div class="wp-block-query"><!-- wp:group {"metadata":{"categories":[],"patternName":"core/block/12102","name":"JLN Heading"},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"typography":{"textTransform":"uppercase","lineHeight":"1","letterSpacing":"2px"},"spacing":{"margin":{"right":"1rem","left":"1rem"},"padding":{"top":"0.5rem","bottom":"0.5rem","left":"1rem","right":"1rem"}}},"backgroundColor":"teal","textColor":"white"} -->
-<h3 class="wp-block-heading has-white-color has-teal-background-color has-text-color has-background has-link-color" style="margin-right:1rem;margin-left:1rem;padding-top:0.5rem;padding-right:1rem;padding-bottom:0.5rem;padding-left:1rem;letter-spacing:2px;line-height:1;text-transform:uppercase"><?php esc_html_e('Meer Oogst', 'jong-literair-nederland');?></h3>
+<h3 class="wp-block-heading has-white-color has-teal-background-color has-text-color has-background has-link-color" style="margin-right:1rem;margin-left:1rem;padding-top:0.5rem;padding-right:1rem;padding-bottom:0.5rem;padding-left:1rem;letter-spacing:2px;line-height:1;text-transform:uppercase"><?php esc_html_e('More Oogst', 'jong-literair-nederland');?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:group -->
 

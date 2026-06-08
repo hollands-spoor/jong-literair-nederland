@@ -1,0 +1,209 @@
+# Copyright (C) 2026 Hollands Spoor
+# This file is distributed under the same license as the Jong Literair Nederland theme.
+msgid ""
+msgstr ""
+"Project-Id-Version: Jong Literair Nederland 0.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/jong-literair-nederland\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-06-04T15:12:23+02:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: jong-literair-nederland\n"
+
+#. Theme Name of the theme
+#: style.css
+msgid "Jong Literair Nederland"
+msgstr ""
+
+#. Theme URI of the theme
+#: style.css
+msgid "https://literairnederland.nl/"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid "Jong Literair Nederland Theme."
+msgstr ""
+
+#. Author of the theme
+#: style.css
+msgid "Hollands Spoor"
+msgstr ""
+
+#: functions.php:94
+#: patterns/404.php:20
+msgid "Search"
+msgstr ""
+
+#: patterns/404.php
+msgctxt "Pattern title"
+msgid "404"
+msgstr ""
+
+#: patterns/404.php:13
+msgid "Not Found"
+msgstr ""
+
+#: patterns/404.php:17
+msgid "No post or page found. Try a search?"
+msgstr ""
+
+#: patterns/404.php:31
+msgid "404"
+msgstr ""
+
+#: patterns/archive-recensent.php
+msgctxt "Pattern title"
+msgid "archive-recensent"
+msgstr ""
+
+#: patterns/archive-recensent.php:13
+msgid "Reviewers and Columnists"
+msgstr ""
+
+#: patterns/archive-recensent.php:22
+#: patterns/home.php:20
+#: patterns/home.php:30
+msgid "Read more"
+msgstr ""
+
+#: patterns/archive.php
+msgctxt "Pattern title"
+msgid "archive"
+msgstr ""
+
+#: patterns/archive.php:40
+#: patterns/index.php:22
+#: patterns/page-no-title.php:20
+#: patterns/page.php:22
+#: patterns/recensie.php:22
+#: patterns/single-column.php:38
+#: patterns/single-interview.php:22
+#: patterns/single-recensent.php:22
+#: patterns/single.php:22
+msgid "Recent"
+msgstr ""
+
+#: patterns/home.php
+msgctxt "Pattern title"
+msgid "home"
+msgstr ""
+
+#: patterns/home.php:45
+msgid "More Posts"
+msgstr ""
+
+#: patterns/home.php:77
+msgid "Covers"
+msgstr ""
+
+#: patterns/home.php:92
+msgid "Frequently used Tags"
+msgstr ""
+
+#: patterns/index.php
+msgctxt "Pattern title"
+msgid "index"
+msgstr ""
+
+#: patterns/jln-heading.php
+msgctxt "Pattern title"
+msgid "JLN Heading"
+msgstr ""
+
+#: patterns/jln-heading.php:10
+msgid "Column"
+msgstr ""
+
+#: patterns/page-no-title.php
+msgctxt "Pattern title"
+msgid "page-no-title"
+msgstr ""
+
+#: patterns/page.php
+msgctxt "Pattern title"
+msgid "page"
+msgstr ""
+
+#: patterns/recensie.php
+msgctxt "Pattern title"
+msgid "recensie"
+msgstr ""
+
+#: patterns/single-column.php
+msgctxt "Pattern title"
+msgid "single-column"
+msgstr ""
+
+#: patterns/single-interview.php
+msgctxt "Pattern title"
+msgid "single-interview"
+msgstr ""
+
+#: patterns/single-oogst.php
+msgctxt "Pattern title"
+msgid "single-oogst"
+msgstr ""
+
+#: patterns/single-oogst.php:24
+msgid "More Oogst"
+msgstr ""
+
+#: patterns/single-recensent.php
+msgctxt "Pattern title"
+msgid "single-recensent"
+msgstr ""
+
+#: patterns/single.php
+msgctxt "Pattern title"
+msgid "single"
+msgstr ""
+
+#: patterns/test.php
+msgctxt "Pattern title"
+msgid "test"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "White"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Black"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Darkgrey"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "JLN Teal"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "JLN Orange"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Barlow Condensed"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Roboto Slab"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Alegreya"
+msgstr ""
