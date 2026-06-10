@@ -28,6 +28,15 @@ $post_date = get_the_date( $date_format, $post_id );
 $main_category_slug = '';
 $post_categories = get_the_category( $post_id );
 if ( ! empty( $post_categories ) && ! is_wp_error( $post_categories ) ) {
+    $post_categories = array_values(
+        array_filter(
+            $post_categories,
+            static function ( $category ) {
+                return isset( $category->parent ) && 0 === (int) $category->parent;
+            }
+        )
+    );
+
     $main_category = reset( $post_categories );
     if ( $main_category && ! empty( $main_category->slug ) ) {
         $main_category_slug = sanitize_html_class( $main_category->slug );

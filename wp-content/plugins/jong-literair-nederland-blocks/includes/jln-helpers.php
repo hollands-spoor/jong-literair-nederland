@@ -3,6 +3,20 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
+if( ! function_exists( 'get_medewerker_link')) {
+    function get_medewerker_link( $medewerker_id ) {
+        if ( ! $medewerker_id ) {
+            return '';
+        }
+        $medewerker_name = get_the_title( $medewerker_id );
+        $medewerker_link = get_permalink( $medewerker_id );
+        if ( $medewerker_name && $medewerker_link ) {
+            return '<a href="' . esc_url( $medewerker_link ) . '">' . esc_html( $medewerker_name ) . '</a>';
+        }
+        return '';
+    }
+} 
+
 if( ! function_exists( 'get_door_regel' ) ) {
     function get_door_regel( $post_id, $category) {
         $auteur_recensenie_id = get_post_meta( $post_id, 'auteur_recensie', true );
@@ -13,12 +27,10 @@ if( ! function_exists( 'get_door_regel' ) ) {
         if ( in_array( $category, array( 'recensies', 'recensie' ), true ) ) {
             $intro = 'Recensie door:';
             if ( $auteur_recensenie_id && $auteur_recensenie_id != '' && $auteur_recensenie_id != 0 && $auteur_recensenie_id != 'null' ) {
-                $medewerker = get_the_title( $auteur_recensenie_id );
-                $link = get_permalink( $auteur_recensenie_id );
-                $medewerker = '<a href="' . esc_url( $link ) . '">' . esc_html( $medewerker ) . '</a>';
+                $medewerker = get_medewerker_link( $auteur_recensenie_id );
                 return $intro . ' '. $medewerker;
             } elseif ( $medewerker_id ) {
-                $medewerker = get_the_title( $medewerker_id );
+                $medewerker = get_medewerker_link( $medewerker_id );
                 return $intro . ' '. $medewerker;
             } else {
                 return '';
@@ -29,10 +41,10 @@ if( ! function_exists( 'get_door_regel' ) ) {
                 // $intro = $door_intro; No more door intro's for oogst, as per request of redactie.
             }
             if ( $medewerker_id ) {
-                $medewerker = get_the_title( $medewerker_id );
+                $medewerker = get_medewerker_link( $medewerker_id );
                 return $intro . ' '. $medewerker;
             } elseif ( $auteur_recensenie_id ) {
-                $medewerker = get_the_title( $auteur_recensenie_id );
+                $medewerker = get_medewerker_link( $auteur_recensenie_id );
                 return $intro . ' '. $medewerker;
             } else {
                 return '';
@@ -45,12 +57,11 @@ if( ! function_exists( 'get_door_regel' ) ) {
             if( $door_intro) {
                 $intro = $door_intro;
             }
-
             if ( $medewerker_id ) {
-                $medewerker = get_the_title( $medewerker_id );
+                $medewerker = get_medewerker_link( $medewerker_id );
                 return $intro . ' ' . $medewerker;
             } elseif ( $auteur_recensenie_id ) {
-                $medewerker = get_the_title( $auteur_recensenie_id );
+                $medewerker = get_medewerker_link( $auteur_recensenie_id );
                 return $intro . ' ' . $medewerker;
             } else {
                 return '';
