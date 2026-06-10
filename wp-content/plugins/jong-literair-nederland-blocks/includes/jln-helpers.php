@@ -71,25 +71,18 @@ if( ! function_exists( 'get_door_regel' ) ) {
 }
 
 if( !function_exists( 'get_besproken_boeken')) {
-
 // postmeta keys 'besproken_boeken_{x}_boektitel' and 'besproken_boeken_{x}_auteur_boek' are written now for legacy purposes.
 // however legacy keys are besproken_boeken_{x}_titel and besproken_boeken_{x}_auteur
-
-
     function get_besproken_boeken( $post_id, $max = 1 ) {
         global $wpdb;
-
         $post_id = (int) $post_id;
         $max = (int) $max;
-
         if ( $post_id <= 0 ) {
             return [];
         }
-
         if ( $max < 1 ) {
             $max = 1;
         }
-
         $rows = $wpdb->get_results(
             $wpdb->prepare(
                 "SELECT meta_key, meta_value
@@ -103,7 +96,6 @@ if( !function_exists( 'get_besproken_boeken')) {
             ),
             ARRAY_A
         );
-
         $indexed = [];
         foreach ( $rows as $row ) {
             $meta_key = (string) ( $row['meta_key'] ?? '' );
@@ -121,7 +113,6 @@ if( !function_exists( 'get_besproken_boeken')) {
                 $indexed[ $index ]['auteur_boek'] = (string) $meta_value;
                 continue;
             }
-
             if ( preg_match( '/^besproken_boeken_(\d+)_boektitel$/', $meta_key, $matches ) ) {
                 $index = (int) $matches[1];
                 if ( ! isset( $indexed[ $index ] ) ) {
@@ -148,11 +139,9 @@ if( !function_exists( 'get_besproken_boeken')) {
                     ],
                 ];
             }
-
             // for legacy oogst berichten:
             $legacy_auteur_boek = get_post_meta( $post_id, 'besproken_boeken_0_auteur', true );
             $legacy_boektitel = get_post_meta( $post_id, 'besproken_boeken_0_titel', true );
-
             if ( $legacy_auteur_boek || $legacy_boektitel ) {
                 return [
                     [
@@ -162,37 +151,28 @@ if( !function_exists( 'get_besproken_boeken')) {
                     ],
                 ];
             }
-
-
             return [];
         }
-
         ksort( $indexed, SORT_NUMERIC );
-
         $result = [];
         foreach ( $indexed as $item ) {
             if ( count( $result ) >= $max ) {
                 break;
             }
-
             if ( ! empty( $item['auteur_boek'] ) || ! empty( $item['boektitel'] ) ) {
                 $result[] = $item;
             }
         }
-
         return $result;
     }
-
 }
 
 // Helper function for ln-titel render.php
 if( ! function_exists( 'get_chapeau' ) ) {
-
     function get_chapeau( $post_id, $category ) {
         if ( in_array( (string) $category, array( 'jonge-oogst', 'oogst' ), true ) ) {
             $option_suffix = is_single() ? 'single' : 'archive';
             $weergave = get_option('xln_options')["oogst-titel-{$option_suffix}"] ?? 'none';
-            
             if ( 'custom' === $weergave ) {
                 $custom_line = get_option('xln_options')["custom-line-{$option_suffix}"] ?? '';
                 return $custom_line ? '<div class="ln-titel__chapeau">' . wp_kses_post( $custom_line ) . '</div>' : false;
