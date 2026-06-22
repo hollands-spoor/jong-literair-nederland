@@ -56,6 +56,7 @@ if ( ! empty( $books ) ) :
 			$uitgever        = isset( $book['uitgeverij'] ) ? trim( (string) $book['uitgeverij'] ) : '';
 			$isbn            = isset( $book['isbn'] ) ? trim( (string) $book['isbn'] ) : '';
 			$aantal_paginas  = isset( $book['aantal_paginas'] ) ? trim( (string) $book['aantal_paginas'] ) : '';
+			$leeftijdscategorie = isset( $book['leeftijdscategorie'] ) ? trim( (string) $book['leeftijdscategorie'] ) : '';
 			$vertaler        = isset( $book['vertaling_door'] ) ? trim( (string) $book['vertaling_door'] ) : '';
 			//$vrije_regel     = isset( $book['vrije_regel'] ) ? trim( (string) $book['vrije_regel'] ) : '';
 			$vrije_regel 	 = '';
@@ -131,23 +132,27 @@ if ( ! empty( $books ) ) :
 						<?php endif; ?>
 
 						<?php if ( $vertaler ) : ?>
-							<p><?php echo esc_html__( 'Translation by:', 'literair-nederland-25' ) . ' ' . esc_html( $vertaler ); ?></p>
+							<p><?php echo esc_html__( 'Translation by:', 'jong-literair-nederland' ) . ' ' . esc_html( $vertaler ); ?></p>
 						<?php endif; ?>
 
 						<?php if ( $uitgever ) : ?>
-							<p><?php echo esc_html__( 'Uitgever:', 'literair-nederland-25' ) . ' ' . esc_html( $uitgever ); ?></p>
+							<p><?php echo esc_html__( 'Uitgever:', 'jong-literair-nederland' ) . ' ' . esc_html( $uitgever ); ?></p>
 						<?php endif; ?>
 
 						<?php if ( $isbn ) : ?>
-							<p class="ln-isbn"><?php echo esc_html__( 'ISBN', 'literair-nederland-25' ) . ' ' . esc_html( $isbn ); ?></p>
+							<p class="ln-isbn"><?php echo esc_html__( 'ISBN', 'jong-literair-nederland' ) . ' ' . esc_html( $isbn ); ?></p>
 						<?php endif; ?>
 
 						<?php if ( $aantal_paginas ) : ?>
 							<p class="ln-aantal-paginas"><?php echo esc_html( $aantal_paginas ) . ' pagina\'s'; ?></p>
 						<?php endif; ?>
 
+						<?php if ( $leeftijdscategorie ) : ?>
+							<p class="ln-leeftijdscategorie"><?php echo esc_html__( 'Leeftijdscategorie:', 'jong-literair-nederland' ) . ' ' . esc_html( $leeftijdscategorie ); ?></p>
+						<?php endif; ?>
+
 						<?php if ( $formatted_price ) : ?>
-							<p class="ln-prijs"><?php echo esc_html__( 'Prijs:', 'literair-nederland-25' ) . ' ' . esc_html( $formatted_price ); ?></p>
+							<p class="ln-prijs"><?php echo esc_html__( 'Prijs:', 'jong-literair-nederland' ) . ' ' . esc_html( $formatted_price ); ?></p>
 						<?php endif; ?>
 						<?php if ( $isbn ) : ?>
 						<?php do_action( 'show_buy_button', $isbn ); ?>

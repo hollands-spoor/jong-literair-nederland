@@ -96,6 +96,44 @@ function jong_ln_blocks_init() {
 }
 add_action( 'init', 'jong_ln_blocks_init' );
 
+/**
+ * Add JLN-only bibliographics field at a fixed position.
+ *
+ * @param array $fields Bibliographic field configuration.
+ * @return array
+ */
+function jln_extend_bibliographic_fields( $fields ) {
+	if ( ! is_array( $fields ) ) {
+		$fields = array();
+	}
+
+	$new_field = array(
+		'leeftijdscategorie' => array(
+			'type'  => 'textline',
+			'label' => __( 'Age category', 'jln-blocks' ),
+		),
+	);
+
+	$position_key = 'aantal_paginas';
+
+	if ( ! array_key_exists( $position_key, $fields ) ) {
+		return array_merge( $fields, $new_field );
+	}
+
+	$result = array();
+
+	foreach ( $fields as $key => $config ) {
+		if ( $position_key === $key ) {
+			$result = array_merge( $result, $new_field );
+		}
+
+		$result[ $key ] = $config;
+	}
+
+	return $result;
+}
+add_filter( 'bibliographic_fields', 'jln_extend_bibliographic_fields' );
+
 add_filter(
 	'block_categories_all',
 	function( array $categories ) {

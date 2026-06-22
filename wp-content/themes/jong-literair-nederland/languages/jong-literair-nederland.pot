@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-06-04T15:12:23+02:00\n"
+"POT-Creation-Date: 2026-06-22T10:04:20+02:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: jong-literair-nederland\n"
@@ -39,6 +39,45 @@ msgstr ""
 msgid "Search"
 msgstr ""
 
+#: legacy-templates/interview.php:94
+#: legacy-templates/oogst.php:134
+#: legacy-templates/recensie.php:104
+msgid "Translation by:"
+msgstr ""
+
+#: legacy-templates/interview.php:98
+#: legacy-templates/recensie.php:108
+msgid "Original title:"
+msgstr ""
+
+#: legacy-templates/interview.php:102
+#: legacy-templates/recensie.php:112
+msgid "Afterword by:"
+msgstr ""
+
+#: legacy-templates/interview.php:106
+#: legacy-templates/recensie.php:116
+msgid "Illustrations by:"
+msgstr ""
+
+#: legacy-templates/interview.php:111
+#: legacy-templates/oogst.php:138
+#: legacy-templates/recensie.php:121
+msgid "Uitgever:"
+msgstr ""
+
+#: legacy-templates/interview.php:121
+#: legacy-templates/oogst.php:142
+#: legacy-templates/recensie.php:133
+msgid "ISBN"
+msgstr ""
+
+#: legacy-templates/interview.php:129
+#: legacy-templates/oogst.php:150
+#: legacy-templates/recensie.php:141
+msgid "Prijs:"
+msgstr ""
+
 #: patterns/404.php
 msgctxt "Pattern title"
 msgid "404"
@@ -66,8 +105,6 @@ msgid "Reviewers and Columnists"
 msgstr ""
 
 #: patterns/archive-recensent.php:22
-#: patterns/home.php:20
-#: patterns/home.php:30
 msgid "Read more"
 msgstr ""
 
@@ -93,16 +130,21 @@ msgctxt "Pattern title"
 msgid "home"
 msgstr ""
 
-#: patterns/home.php:45
-msgid "More Posts"
+#: patterns/home.php:30
+#: patterns/home.php:52
+msgid "Lees verder"
 msgstr ""
 
-#: patterns/home.php:77
-msgid "Covers"
+#: patterns/home.php:65
+msgid "Meer berichten"
 msgstr ""
 
-#: patterns/home.php:92
-msgid "Frequently used Tags"
+#: patterns/home.php:97
+msgid "Omslagen"
+msgstr ""
+
+#: patterns/home.php:112
+msgid "Veelgebruikte tags"
 msgstr ""
 
 #: patterns/index.php
@@ -170,17 +212,17 @@ msgstr ""
 
 #: theme.json
 msgctxt "Color name"
-msgid "White"
+msgid "Wit"
 msgstr ""
 
 #: theme.json
 msgctxt "Color name"
-msgid "Black"
+msgid "Zwart"
 msgstr ""
 
 #: theme.json
 msgctxt "Color name"
-msgid "Darkgrey"
+msgid "Donkergrijs"
 msgstr ""
 
 #: theme.json
@@ -190,7 +232,7 @@ msgstr ""
 
 #: theme.json
 msgctxt "Color name"
-msgid "JLN Orange"
+msgid "JLN Oranje"
 msgstr ""
 
 #: theme.json

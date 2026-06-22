@@ -101,24 +101,24 @@ if ( ! $has_bibliographics || 'yes' === $prevent_legacy ) {
 	<?php endif; ?>
 
 	<?php if ( $vertaling_door ) : ?>
-		<p><?php echo esc_html__( 'Translation by:', 'literair-nederland-25' ) . ' ' . esc_html( $vertaling_door ); ?></p>
+		<p><?php echo esc_html__( 'Translation by:', 'jong-literair-nederland' ) . ' ' . esc_html( $vertaling_door ); ?></p>
 	<?php endif; ?>
 
 	<?php if ( $oorspronkelijke_titel ) : ?>
-		<p><?php echo esc_html__( 'Original title:', 'literair-nederland-25' ) . ' ' . esc_html( $oorspronkelijke_titel ); ?></p>
+		<p><?php echo esc_html__( 'Original title:', 'jong-literair-nederland' ) . ' ' . esc_html( $oorspronkelijke_titel ); ?></p>
 	<?php endif; ?>
 
 	<?php if ( $nawoord_door ) : ?>
-		<p><?php echo esc_html__( 'Afterword by:', 'literair-nederland-25' ) . ' ' . esc_html( $nawoord_door ); ?></p>
+		<p><?php echo esc_html__( 'Afterword by:', 'jong-literair-nederland' ) . ' ' . esc_html( $nawoord_door ); ?></p>
 	<?php endif; ?>
 
 	<?php if ( $illustraties_door ) : ?>
-		<p><?php echo esc_html__( 'Illustrations by:', 'literair-nederland-25' ) . ' ' . esc_html( $illustraties_door ); ?></p>
+		<p><?php echo esc_html__( 'Illustrations by:', 'jong-literair-nederland' ) . ' ' . esc_html( $illustraties_door ); ?></p>
 	<?php endif; ?>
 
 	<?php if ( $uitgever ) : ?>
 		<p>
-			<?php echo esc_html__( 'Uitgever:', 'literair-nederland-25' ) . ' '; ?>
+			<?php echo esc_html__( 'Uitgever:', 'jong-literair-nederland' ) . ' '; ?>
 			<?php /* if ( $uitgever_url ) : ?>
 				<a href="<?php echo esc_url( $uitgever_url ); ?>" target="_blank" rel="noopener"><?php echo esc_html( $uitgever ); ?></a>
 			<?php else : ?>
@@ -130,7 +130,7 @@ if ( ! $has_bibliographics || 'yes' === $prevent_legacy ) {
 	<?php endif; ?>
 
 	<?php if ( $isbn ) : ?>
-		<p class="ln-isbn"><?php echo esc_html__( 'ISBN', 'literair-nederland-25' ) . ' ' . esc_html( $isbn ); ?></p>
+		<p class="ln-isbn"><?php echo esc_html__( 'ISBN', 'jong-literair-nederland' ) . ' ' . esc_html( $isbn ); ?></p>
 	<?php endif; ?>
 
 	<?php if ( $aantal_paginas ) : ?>
@@ -138,7 +138,7 @@ if ( ! $has_bibliographics || 'yes' === $prevent_legacy ) {
 	<?php endif; ?>
 
 	<?php if ( $formatted_price ) : ?>
-		<p class="ln-prijs"><?php echo esc_html__( 'Prijs:', 'literair-nederland-25' ) . ' ' . esc_html( $formatted_price ); ?></p>
+		<p class="ln-prijs"><?php echo esc_html__( 'Prijs:', 'jong-literair-nederland' ) . ' ' . esc_html( $formatted_price ); ?></p>
 	<?php endif; ?>
 
 	<?php if ( $isbn ) : ?>

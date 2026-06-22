@@ -5,6 +5,35 @@
   --jln--page-margins-vertical: 3em;
 }
 
+/* Keep spacing tokens in sync with Gutenberg global padding breakpoints. */
+@media (max-width: 999.98px) {
+  :root {
+    --jln--page-margins-horizontal: 2em;
+    --jln--page-margins-vertical: 2em;
+    --wp--style--root--padding-left: 2em;
+    --wp--style--root--padding-right: 2em;
+  }
+
+  body {
+    --wp--style--root--padding-left: 2em !important;
+    --wp--style--root--padding-right: 2em !important;
+  }
+}
+
+@media (max-width: 599.98px) {
+  :root {
+    --jln--page-margins-horizontal: 1em;
+    --jln--page-margins-vertical: 1em;
+    --wp--style--root--padding-left: 1em;
+    --wp--style--root--padding-right: 1em;
+  }
+
+  body {
+    --wp--style--root--padding-left: 1em !important;
+    --wp--style--root--padding-right: 1em !important;
+  }
+}
+
 body {
     background-color: #ffffff;
 }
@@ -15,7 +44,35 @@ body {
 }
 
 header .wp-block-jln-jln-logo.has-logo-5 {
-  min-width: 20em;
+  min-width: 10em;
+}
+
+/* Keep Navigation block in mobile-toggle mode until 1000px instead of core 600px. */
+@media (min-width: 600px) and (max-width: 999.98px) {
+  .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
+    display: none;
+  }
+
+  .wp-block-navigation__responsive-container-open:not(.always-shown) {
+    display: flex;
+  }
+}
+
+@media (max-width: 799.98px) {
+  header .wp-block-group.main-search {
+    display: none;
+  }
+}
+
+/* Stack Columns blocks on mobile up to 1000px. */
+@media (max-width: 999.98px) {
+  .wp-block-columns:not(.is-not-stacked-on-mobile) {
+    flex-wrap: wrap !important;
+  }
+
+  .wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column {
+    flex-basis: 100% !important;
+  }
 }
 
 /* Remove margin between adjacent blocks that both have a background color. */
@@ -41,6 +98,8 @@ header .wp-block-jln-jln-logo.has-logo-5 {
   padding-left: var(--jln--page-margins-horizontal);
   padding-right: var(--jln--page-margins-horizontal);
 }
+
+
 
 /* Obsoleted by the above rule? */
 /* .wp-site-blocks > main.has-background > .has-global-padding.is-layout-constrained {
@@ -95,6 +154,13 @@ header .wp-block-jln-jln-logo.has-logo-5 {
     display: block;
     width: 100%;
     height: auto
+}
+
+/* Opt out of core mobile single-column collapse for selected post-template grids. */
+@media (max-width: 600px) {
+  .no-colapse .wp-block-post-template.wp-block-post-template-is-layout-grid.wp-block-post-template-is-layout-grid.wp-block-post-template-is-layout-grid.wp-block-post-template-is-layout-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  }
 }
 
 .wp-block-tag-cloud {

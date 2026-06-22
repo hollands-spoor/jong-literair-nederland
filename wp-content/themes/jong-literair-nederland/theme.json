@@ -7,17 +7,17 @@
 			"palette": [
 				{
 					"color": "#ffffff",
-					"name": "White",
+					"name": "Wit",
 					"slug": "white"
 				},
 				{
 					"color": "#000000",
-					"name": "Black",
+					"name": "Zwart",
 					"slug": "black"
 				},
 				{
 					"color": "darkgrey",
-					"name": "Darkgrey",
+					"name": "Donkergrijs",
 					"slug": "darkgrey"
 				},
 				{
@@ -27,7 +27,7 @@
 				},
 				{
 					"color": "#cc430a",
-					"name": "JLN Orange",
+					"name": "JLN Oranje",
 					"slug": "jln-orange"
 				}
 			]

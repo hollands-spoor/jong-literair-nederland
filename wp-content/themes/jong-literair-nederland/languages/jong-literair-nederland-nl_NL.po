@@ -1,9 +1,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Jong Literair Nederland 0.1.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/jong-literair-nederland\n"
-"POT-Creation-Date: 2026-06-04T14:55:55+02:00\n"
-"PO-Revision-Date: 2026-06-04 15:21+0200\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/jong-literair-"
+"nederland\n"
+"POT-Creation-Date: 2026-06-22T10:04:20+02:00\n"
+"PO-Revision-Date: 2026-06-22 10:17+0200\n"
 "Last-Translator: Team Literair Nederland\n"
 "Language-Team: Dutch\n"
 "Language: nl_NL\n"
@@ -23,15 +24,64 @@ msgstr "Jong Literair Nederland"
 msgid "https://literairnederland.nl/"
 msgstr "https://literairnederland.nl/"
 
+#. Description of the theme
+#: style.css
+msgid "Jong Literair Nederland Theme."
+msgstr "Jong Literair Nederland-thema."
+
 #. Author of the theme
 #: style.css
 msgid "Hollands Spoor"
 msgstr "Hollands Spoor"
 
+#: functions.php:94 patterns/404.php:20
+msgid "Search"
+msgstr "Zoeken"
+
+#: legacy-templates/interview.php:94 legacy-templates/oogst.php:134
+#: legacy-templates/recensie.php:104
+msgid "Translation by:"
+msgstr "Vertaling door:"
+
+#: legacy-templates/interview.php:98 legacy-templates/recensie.php:108
+msgid "Original title:"
+msgstr "Oorspronkelijke titel"
+
+#: legacy-templates/interview.php:102 legacy-templates/recensie.php:112
+msgid "Afterword by:"
+msgstr "Nawoord door:"
+
+#: legacy-templates/interview.php:106 legacy-templates/recensie.php:116
+msgid "Illustrations by:"
+msgstr "Illustraties door:"
+
+#: legacy-templates/interview.php:111 legacy-templates/oogst.php:138
+#: legacy-templates/recensie.php:121
+msgid "Uitgever:"
+msgstr "Uitgever: "
+
+#: legacy-templates/interview.php:121 legacy-templates/oogst.php:142
+#: legacy-templates/recensie.php:133
+msgid "ISBN"
+msgstr "ISBN:"
+
+#: legacy-templates/interview.php:129 legacy-templates/oogst.php:150
+#: legacy-templates/recensie.php:141
+msgid "Prijs:"
+msgstr "Prijs: "
+
 #: patterns/404.php
 msgctxt "Pattern title"
 msgid "404"
 msgstr "404"
+
+#: patterns/404.php:13
+msgid "Not Found"
+msgstr "Niet gevonden"
+
+#: patterns/404.php:17
+msgid "No post or page found. Try a search?"
+msgstr "Geen bericht of pagina gevonden. Misschien helpt de zoekfunctie."
 
 #: patterns/404.php:31
 msgid "404"
@@ -41,6 +91,14 @@ msgstr "404"
 msgctxt "Pattern title"
 msgid "archive-recensent"
 msgstr "archive-recensent"
+
+#: patterns/archive-recensent.php:13
+msgid "Reviewers and Columnists"
+msgstr "Recensenten en columnisten"
+
+#: patterns/archive-recensent.php:22
+msgid "Read more"
+msgstr "Lees verder"
 
 #: patterns/archive.php
 msgctxt "Pattern title"
@@ -58,6 +116,22 @@ msgstr "Recent"
 msgctxt "Pattern title"
 msgid "home"
 msgstr "home"
+
+#: patterns/home.php:30 patterns/home.php:52
+msgid "Lees verder"
+msgstr "Lees verder"
+
+#: patterns/home.php:65
+msgid "Meer berichten"
+msgstr "Meer berichten"
+
+#: patterns/home.php:97
+msgid "Omslagen"
+msgstr "Omslagen"
+
+#: patterns/home.php:112
+msgid "Veelgebruikte tags"
+msgstr "Veelgebruikte tags"
 
 #: patterns/index.php
 msgctxt "Pattern title"
@@ -103,6 +177,10 @@ msgctxt "Pattern title"
 msgid "single-oogst"
 msgstr "single-oogst"
 
+#: patterns/single-oogst.php:24
+msgid "More Oogst"
+msgstr "Meer Oogst"
+
 #: patterns/single-recensent.php
 msgctxt "Pattern title"
 msgid "single-recensent"
@@ -119,19 +197,22 @@ msgid "test"
 msgstr "test"
 
 #: theme.json
+#, fuzzy
+#| msgctxt "Color name"
+#| msgid "White"
 msgctxt "Color name"
-msgid "White"
+msgid "Wit"
 msgstr "Wit"
 
 #: theme.json
 msgctxt "Color name"
-msgid "Black"
-msgstr "Zwart"
+msgid "Zwart"
+msgstr ""
 
 #: theme.json
 msgctxt "Color name"
-msgid "Darkgrey"
-msgstr "Donkergrijs"
+msgid "Donkergrijs"
+msgstr ""
 
 #: theme.json
 msgctxt "Color name"
@@ -139,8 +220,11 @@ msgid "JLN Teal"
 msgstr "JLN Teal"
 
 #: theme.json
+#, fuzzy
+#| msgctxt "Color name"
+#| msgid "JLN Orange"
 msgctxt "Color name"
-msgid "JLN Orange"
+msgid "JLN Oranje"
 msgstr "JLN Oranje"
 
 #: theme.json
@@ -158,43 +242,19 @@ msgctxt "Font family name"
 msgid "Alegreya"
 msgstr "Alegreya"
 
-#: patterns/404.php:13
-msgid "Not Found"
-msgstr "Niet gevonden"
+#~ msgctxt "Color name"
+#~ msgid "Black"
+#~ msgstr "Zwart"
 
-#: patterns/404.php:17
-msgid "No post or page found. Try a search?"
-msgstr "Geen bericht of pagina gevonden. Misschien helpt de zoekfunctie."
+#~ msgctxt "Color name"
+#~ msgid "Darkgrey"
+#~ msgstr "Donkergrijs"
 
-#: functions.php:94 patterns/404.php:20
-msgid "Search"
-msgstr "Zoeken"
+#~ msgid "More Posts"
+#~ msgstr "Meer berichten"
 
-#: patterns/archive-recensent.php:13
-msgid "Reviewers and Columnists"
-msgstr "Recensenten en columnisten"
+#~ msgid "Covers"
+#~ msgstr "Omslagen"
 
-#: patterns/archive-recensent.php:22 patterns/home.php:20 patterns/home.php:30
-msgid "Read more"
-msgstr "Lees verder"
-
-#: patterns/home.php:45
-msgid "More Posts"
-msgstr "Meer berichten"
-
-#: patterns/home.php:77
-msgid "Covers"
-msgstr "Omslagen"
-
-#: patterns/home.php:92
-msgid "Frequently used Tags"
-msgstr "Veelgebruikte tags"
-
-#: patterns/single-oogst.php:24
-msgid "More Oogst"
-msgstr "Meer Oogst"
-
-#. Description of the theme
-#: style.css
-msgid "Jong Literair Nederland Theme."
-msgstr "Jong Literair Nederland-thema."
+#~ msgid "Frequently used Tags"
+#~ msgstr "Veelgebruikte tags"
